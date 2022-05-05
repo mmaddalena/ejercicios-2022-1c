@@ -18,4 +18,3 @@ En nuestro modelo, el chequeo de revisar si hay comida suficiente sucede en los 
 > Pregunta: Con lo que vimos en la clase del Jueves (en la parte teórica, prototipos vs clases) ¿cómo sacarían este código? Sobre la implementación ¿cómo resolvieron guardar los huevos? ¿Usaron colecciones? ¿Diccionarios? ¿Uno, varios? ¿con qué indexaban? Pero la pregunta más importante: ¿es lo más sencillo que hacía falta? ¿o se podía hacer menos y todo andaba?
 
 Para guardar los huevos usamos un diccionario, que tenía como indices el nombre de la linea genética. Podríamos haber utilizado varios colaboradores internos (para cada linea genética) pero un diccionario nos pareció más sencillo y ordenado. 
-Prueba Santiago Github
