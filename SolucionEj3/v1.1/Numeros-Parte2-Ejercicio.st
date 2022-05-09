@@ -576,10 +576,9 @@ Entero subclass: #Cero
 	poolDictionaries: ''
 	category: 'Numeros-Parte2-Ejercicio'!
 
-!Cero methodsFor: 'arithmetic operations' stamp: 'sL 5/8/2022 22:51:51'!
+!Cero methodsFor: 'arithmetic operations' stamp: 'sL 5/9/2022 18:23:24'!
 fibonacci
-	"(self isZero or: [self isOne]) ifTrue: [^one]."
-	
+
 	| one |
 	
 	one := Entero with: 1.
