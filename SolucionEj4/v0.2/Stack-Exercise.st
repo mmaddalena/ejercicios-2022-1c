@@ -144,7 +144,7 @@ TestCase subclass: #SentenceFinderByPrefixTest
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:02:09'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 09:02:09'!
 setUp
 	
 	"Stacks"
@@ -206,22 +206,22 @@ setUp
 	resultsForAnOOStackWithManyElements add: 'Messias'.
 	resultsForAnOOStackWithManyElements add: 'Messi es crack'.! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'MAM 5/15/2022 23:08:12'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'MAM 5/15/2022 23:08:12'!
 test01oneElementCorrectlyFoundFromAnOOStackWithOneElement
 
 	self assert: (aFinderWithAnOOStackWithOneElement find: 'Messi') equals: resultsForAnOOStackWithOneElement! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'MAM 5/15/2022 22:31:21'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'MAM 5/15/2022 22:31:21'!
 test02someElementsCorrectlyFoundFromAnOOStackWithManyElements
 
 	self assert: (aFinderWithAnOOStackWithManyElements find: 'Messi') equals: resultsForAnOOStackWithManyElements! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 07:39:21'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 07:39:21'!
 test03ceroElementsCorrectlyFoundFromAnOOStackWithManyElements
 
 	self assert: (aFinderWithAnOOStackWithManyElements find: 'Nada') equals: resultsForAnOOStackWithNoElementsFound ! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 08:08:16'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 08:08:16'!
 test04originalStackRemainsInOrder
 
 	| anElementFromOriginalStack anElementFromCopyStack firstAuxiliaryOOStack secondAuxiliaryOOStack |
@@ -245,7 +245,7 @@ test04originalStackRemainsInOrder
 		anOOStackWithManyElementsCopy push: anElementFromCopyStack.
 		]! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 07:47:05'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 07:47:05'!
 test05prefixMustBeString
 
 	self 
@@ -253,7 +253,7 @@ test05prefixMustBeString
 		raise: Error
 		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix prefixIsNotStringErrorDescription equals: anError messageText ]! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 08:08:27'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 08:08:27'!
 test06prefixCantHaveSpaces
 
 	self 
@@ -261,7 +261,7 @@ test06prefixCantHaveSpaces
 		raise: Error
 		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix prefixCantHaveSpacesErrorDescription equals: anError messageText ]! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:02:58'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 09:02:58'!
 test07stackCantBeEmpty
 	
 	| Test07Finder |
@@ -271,7 +271,7 @@ test07stackCantBeEmpty
 		raise: Error
 		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix associatedOOStackIsEmptyErrorDescription equals: anError messageText ]! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:13:11'!
+!SentenceFinderByPrefixTest methodsFor: 'test' stamp: 'sL 5/16/2022 09:13:11'!
 test08stackElementsMustBeStrings
 
 	| Test08Finder |
@@ -380,34 +380,21 @@ initializeWith: AnOOStack
 ! !
 
 
-!SentenceFinderByPrefix methodsFor: 'operations' stamp: 'sL 5/16/2022 08:31:18'!
+!SentenceFinderByPrefix methodsFor: 'operations' stamp: 'sL 5/16/2022 10:31:29'!
 find: aPrefix
 
-	|anAuxiliaryOOStack anElement anAuxiliaryOrderedCollection result|
-	anAuxiliaryOOStack := OOStack new.
-	anAuxiliaryOrderedCollection := OrderedCollection new.
-	
-	(aPrefix isString) ifFalse: [
-		self error: SentenceFinderByPrefix prefixIsNotStringErrorDescription "<-- No me deja poner 'self' donde puse 'SentenceFinderByPrefix' "
-		].	
+	^(self detectPrefixState: aPrefix) find: aPrefix in: OOStackAsociated.
+! !
 
-	(aPrefix includesSubString: ' ') ifTrue: [
-		self error: SentenceFinderByPrefix prefixCantHaveSpacesErrorDescription "<-- No me deja poner 'self' donde puse 'SentenceFinderByPrefix' "
-		].
+
+!SentenceFinderByPrefix methodsFor: 'operationsAuxiliaries-private' stamp: 'sL 5/16/2022 10:31:45'!
+detectPrefixState: aPrefix
+
+	| prefixState |
 	
-	(OOStackAsociated size) timesRepeat: [
-		anElement := OOStackAsociated pop.
-		anAuxiliaryOrderedCollection addFirst: anElement.
-		anAuxiliaryOOStack push: anElement.
-		].
+	prefixState := StateOfPrefix subclasses detect: [ : aSubclass | aSubclass isState: aPrefix].
 	
-	(anAuxiliaryOOStack size) timesRepeat: [
-		anElement := anAuxiliaryOOStack pop.
-		OOStackAsociated push: anElement.
-		].
-	
-	result := anAuxiliaryOrderedCollection select: [: Element | Element beginsWith: aPrefix].
-	^result! !
+	^prefixState new! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -440,7 +427,7 @@ prefixIsNotStringErrorDescription
 
 	^ 'Prefixes must be strings'! !
 
-!SentenceFinderByPrefix class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:08:57'!
+!SentenceFinderByPrefix class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 10:08:24'!
 with: AnOOStack
 
 	| newFinder anElement anAuxiliaryOOStack |
@@ -455,7 +442,6 @@ with: AnOOStack
 		(anElement isString) ifFalse: [self error: SentenceFinderByPrefix associatedOOStackContainsNotStringsErrorDescription].
 		anAuxiliaryOOStack push: anElement.
 		].
-	
 	(anAuxiliaryOOStack size) timesRepeat: [
 	anElement := anAuxiliaryOOStack pop.
 	AnOOStack push: anElement.
@@ -488,10 +474,10 @@ esValidoHacerTop: aOOStack
 StateOfOOStack class
 	instanceVariableNames: ''!
 
-!StateOfOOStack class methodsFor: 'as yet unclassified' stamp: 'MAM 5/15/2022 10:53:51'!
+!StateOfOOStack class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:46:14'!
 IsState: aOOStack
 	
-	^self subclassResponsibility! !
+	self subclassResponsibility! !
 
 
 !classDefinition: #EmptyState category: 'Stack-Exercise'!
@@ -550,3 +536,120 @@ NotEmptyState class
 isState: aOOStack
 	
 	^aOOStack isEmpty not.! !
+
+
+!classDefinition: #StateOfPrefix category: 'Stack-Exercise'!
+Object subclass: #StateOfPrefix
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!StateOfPrefix methodsFor: 'operations' stamp: 'sL 5/16/2022 10:24:59'!
+find: aPrefix in: anOOStack
+	
+	self subclassResponsibility ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'StateOfPrefix class' category: 'Stack-Exercise'!
+StateOfPrefix class
+	instanceVariableNames: ''!
+
+!StateOfPrefix class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:47:07'!
+isState: aString
+
+	self subclassResponsibility ! !
+
+
+!classDefinition: #HasSpaces category: 'Stack-Exercise'!
+StateOfPrefix subclass: #HasSpaces
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!HasSpaces methodsFor: 'operations' stamp: 'sL 5/16/2022 10:24:56'!
+find: aPrefix in: anOOStack
+
+	self error: SentenceFinderByPrefix prefixCantHaveSpacesErrorDescription
+! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'HasSpaces class' category: 'Stack-Exercise'!
+HasSpaces class
+	instanceVariableNames: ''!
+
+!HasSpaces class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 09:48:21'!
+isState: aString
+
+	^aString includesSubString: ' '.
+! !
+
+
+!classDefinition: #IsNotString category: 'Stack-Exercise'!
+StateOfPrefix subclass: #IsNotString
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!IsNotString methodsFor: 'operations' stamp: 'sL 5/16/2022 10:24:53'!
+find: aPrefix in: anOOStack
+
+	self error: SentenceFinderByPrefix prefixIsNotStringErrorDescription ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'IsNotString class' category: 'Stack-Exercise'!
+IsNotString class
+	instanceVariableNames: ''!
+
+!IsNotString class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 10:17:22'!
+isState: aString
+
+	^aString isString not.! !
+
+
+!classDefinition: #IsValid category: 'Stack-Exercise'!
+StateOfPrefix subclass: #IsValid
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!IsValid methodsFor: 'operations' stamp: 'sL 5/16/2022 10:24:46'!
+find: aPrefix in: anOOStack
+
+	| result anAuxiliaryOrderedCollection anElement anAuxiliaryOOStack |
+	anAuxiliaryOOStack := OOStack new.
+	anAuxiliaryOrderedCollection := OrderedCollection new.
+	
+	(anOOStack size) timesRepeat: [
+		anElement := anOOStack pop.
+		anAuxiliaryOrderedCollection addFirst: anElement.
+		anAuxiliaryOOStack push: anElement.
+		].
+
+	(anAuxiliaryOOStack size) timesRepeat: [
+		anElement := anAuxiliaryOOStack pop.
+		anOOStack push: anElement.
+		].
+
+	result := anAuxiliaryOrderedCollection select: [: Element | Element beginsWith: aPrefix].
+	^result! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'IsValid class' category: 'Stack-Exercise'!
+IsValid class
+	instanceVariableNames: ''!
+
+!IsValid class methodsFor: 'as yet unclassified' stamp: 'sL 5/16/2022 10:23:36'!
+isState: aString
+
+	| isItString |
+	
+	isItString := aString isString.
+	^(aString includesSubString: ' ') not & aString isString.! !
