@@ -1,0 +1,2562 @@
+
+
+----STARTUP---- (7 June 2022 18:08:27) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+TestCase subclass: #ReceptiveAccountTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #ReceptiveAccountTest category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+TestCase subclass: #ReceptiveAccountTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:10:43'!
+           test01ReceptiveAccountHaveZeroAsBalanceWhenCreated 
+
+	| account |
+	
+	account := ReceptiveAccount new.
+
+	self assert: 0 equals: account balance
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:14:20'!
+    test02DepositIncreasesBalanceOnTransactionValue 
+
+	| account |
+	
+	account := ReceptiveAccount  new.
+	Deposit register: 100 * peso on: account.
+		
+	self assert: 100 * peso equals: account balance
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:14:24'!
+                test03WithdrawDecreasesBalanceOnTransactionValue 
+
+	| account |
+	
+	account := ReceptiveAccount new.
+	Deposit register: 100 * peso on: account.
+	Withdraw register: 50 * peso on: account.
+		
+	self assert: 50 * peso equals: account balance
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:10:14'!
+      test04WithdrawValueMustBePositive 
+
+	| account withdrawValue |
+	
+	account := ReceptiveAccount new.
+	withdrawValue := 50 * peso.
+	
+	self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:10:22'!
+                        test05ReceptiveAccountKnowsRegisteredTransactions 
+
+	| account deposit withdraw |
+	
+	account := ReceptiveAccount new.
+	deposit := Deposit register: 100 * peso on: account.
+	withdraw := Withdraw register: 50 * peso on: account.
+		
+	self assert: (account hasRegistered: deposit).
+	self assert: (account hasRegistered: withdraw).
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:12:14'!
+            test06ReceptiveAccountDoNotKnowNotRegisteredTransactions
+
+	| account deposit withdraw |
+	
+	account := ReceptiveAccount new.
+	deposit :=  Deposit for: 100 * peso.
+	withdraw := Withdraw for: 50 * peso.
+		
+	self deny: (account hasRegistered: deposit).
+	self deny: (account hasRegistered: withdraw).
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:12:23'!
+           test07AccountKnowsItsTransactions 
+
+	| account deposit |
+	
+	account := ReceptiveAccount new.
+	
+	deposit := Deposit register: 50 * peso on: account.
+		
+	self assert: 1 equals: account transactions size.
+	self assert: (account transactions includes: deposit).
+! !
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'MAM 6/2/2022 21:56:10'!
+                test08TransactionWorks
+
+	| account deposit anotherAccount |
+	
+	account := ReceptiveAccount new.
+	anotherAccount := ReceptiveAccount new.
+	
+	deposit := Deposit register: 50 * peso on: account.
+	
+	
+	account transfer: 50 * peso to: anotherAccount.
+		
+	self assert: account  balance equals: 0 * peso.
+	self assert: anotherAccount balance equals: 50 * peso.
+! !
+
+TestCase subclass: #TransferenceTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #TransferenceTests category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+TestCase subclass: #TransferenceTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 17:52:32'!
+            test01TransferenceTakesMoneyFromOriginAccount
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	Transference send: 50*peso from: originAccount  to: destinationAccount.
+	
+	self assert: originAccount  balance equals: -50 * peso.
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 17:53:08'!
+   test02TransferenceSendsMoneyToDestinationAccount
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	Transference send: 50*peso from: originAccount  to: destinationAccount.
+	
+	self assert: destinationAccount  balance equals: 50 * peso.
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 17:56:27'!
+                            test03TransferenceContainsCorrectAmount
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference value) equals: 50 * peso.
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	! !
+
+Object subclass: #AccountTransaction
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #AccountTransaction category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Object subclass: #AccountTransaction
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!AccountTransaction methodsFor: 'value' stamp: 'sL 6/7/2022 17:48:25'!
+                            arithmeticValue
+
+	^ self value.! !
+!AccountTransaction methodsFor: 'value' stamp: 'HernanWilkinson 9/12/2011 12:25' overrides: 16902254!
+                       value 
+
+	self subclassResponsibility ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+AccountTransaction class
+	instanceVariableNames: ''!
+
+!classDefinition: 'AccountTransaction class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+AccountTransaction class
+	instanceVariableNames: ''!
+!AccountTransaction class methodsFor: 'instance creation' stamp: 'NR 10/17/2019 03:22:00'!
+                              register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction! !
+
+AccountTransaction subclass: #Deposit
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Deposit category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+AccountTransaction subclass: #Deposit
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Deposit methodsFor: 'initialization' stamp: 'HernanWilkinson 7/13/2011 18:45'!
+                               initializeFor: aValue
+
+	value := aValue ! !
+!Deposit methodsFor: 'value' stamp: 'sL 6/7/2022 17:47:05' overrides: 50331821!
+    arithmeticValue
+
+	^ self value.! !
+!Deposit methodsFor: 'value' stamp: 'HernanWilkinson 7/13/2011 18:38' overrides: 50331826!
+  value
+
+	^ value! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Deposit class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Deposit class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Deposit class
+	instanceVariableNames: ''!
+!Deposit class methodsFor: 'instance creation' stamp: 'HernanWilkinson 7/13/2011 18:38'!
+                       for: aValue
+
+	^ self new initializeFor: aValue ! !
+
+AccountTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #TransferDeposit category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+AccountTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 17:47:09' overrides: 50331821!
+      arithmeticValue
+
+	^ self value.! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 17:46:22'!
+           initializeFor: aValue 
+	
+	value := aValue.! !
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 17:49:28' overrides: 50331826!
+            value
+
+	^ value! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+TransferDeposit class
+	instanceVariableNames: ''!
+
+!classDefinition: 'TransferDeposit class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+TransferDeposit class
+	instanceVariableNames: ''!
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 17:46:13'!
+for: aValue 
+
+	^ self new initializeFor: aValue ! !
+
+AccountTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #TransferWithdraw category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+AccountTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 17:46:57' overrides: 50331821!
+      arithmeticValue
+
+	^ self value negated! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 17:44:21'!
+        initializeFor: aValue 
+	
+	value := aValue.! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 17:49:31' overrides: 50331826!
+                value
+
+	^ value! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+TransferWithdraw class
+	instanceVariableNames: ''!
+
+!classDefinition: 'TransferWithdraw class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+TransferWithdraw class
+	instanceVariableNames: ''!
+!TransferWithdraw class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 17:43:42'!
+                            for: aValue 
+
+	^ self new initializeFor: aValue ! !
+
+AccountTransaction subclass: #Withdraw
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Withdraw category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+AccountTransaction subclass: #Withdraw
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Withdraw methodsFor: 'initialization' stamp: 'HernanWilkinson 7/13/2011 18:46'!
+               initializeFor: aValue
+
+	value := aValue ! !
+!Withdraw methodsFor: 'value' stamp: 'sL 6/7/2022 17:46:51' overrides: 50331821!
+   arithmeticValue
+
+	^ self value negated! !
+!Withdraw methodsFor: 'value' stamp: 'HernanWilkinson 7/13/2011 18:33' overrides: 50331826!
+                          value
+
+	^ value! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Withdraw class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Withdraw class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Withdraw class
+	instanceVariableNames: ''!
+!Withdraw class methodsFor: 'instance creation' stamp: 'HernanWilkinson 7/13/2011 18:33'!
+                   for: aValue
+
+	^ self new initializeFor: aValue ! !
+
+Object subclass: #ReceptiveAccount
+	instanceVariableNames: 'transactions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #ReceptiveAccount category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Object subclass: #ReceptiveAccount
+	instanceVariableNames: 'transactions'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!ReceptiveAccount methodsFor: 'initialization' stamp: 'NR 10/17/2019 15:06:56' overrides: 16920235!
+               initialize
+
+	transactions := OrderedCollection new.! !
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'MAM 6/2/2022 21:48:29'!
+                           balance
+
+	^transactions sum: [ :aTransaction | aTransaction arithmeticValue ] ifEmpty: [ 0 ]! !
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'NR 10/17/2019 03:28:43'!
+                 hasRegistered: aTransaction
+
+	^ transactions includes: aTransaction 
+! !
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'HernanWilkinson 7/13/2011 18:37'!
+                               register: aTransaction
+
+	transactions add: aTransaction 
+! !
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'HernanWilkinson 7/13/2011 18:37'!
+           transactions 
+
+	^ transactions copy! !
+!ReceptiveAccount methodsFor: 'main protocol' stamp: 'MAM 6/2/2022 21:57:30'!
+           transfer: anAmountOfMoney to: anotherAccount
+	Deposit register: anAmountOfMoney on: anotherAccount.
+	Withdraw register: anAmountOfMoney on: self.
+
+! !
+
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Object subclass: #Transference
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Transference class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Transference class' category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:08:54'!
+Transference class
+	instanceVariableNames: ''!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:04:33'!
+                  send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+
+----End fileIn of /home/lambda/Cuis/ServiciosFinancieros-Ejercicio.st----!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+Object subclass: #Transference
+	instanceVariableNames: 'sender'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:21'!
+Object subclass: #Transference
+	instanceVariableNames: 'sender'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+Object subclass: #Transference
+	instanceVariableNames: 'sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:26'!
+Object subclass: #Transference
+	instanceVariableNames: 'sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+Object subclass: #Transference
+	instanceVariableNames: 'value sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:30'!
+Object subclass: #Transference
+	instanceVariableNames: 'value sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Transference methodsFor: 'no messages' stamp: 'sL 6/7/2022 18:10:34'!
+                     initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount .! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:10:36'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:10:36'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:10:36'!
+FAILURE!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:10:36'!
+FAILURE!
+
+Transference!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:12:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:12:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:12:24'!
+FAILURE!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:12:24'!
+FAILURE!
+
+firstTransference value!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:13:05' overrides: 16902254!
+         value
+
+	^value! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:13:22'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:15:36'!
+ test04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:15:51'!
+   test05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:16:38'!
+ERROR!
+
+!testRun: #TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:16:38'!
+ERROR!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:16:55'!
+          sender
+
+	^sender ! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:17:00'!
+                            receiver
+
+	^receiver ! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:17:53'!
+                        aaatest04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	! !
+
+!methodRemoval: TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:17:53'!
+test04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:18:01'!
+       aaatest05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	! !
+
+!methodRemoval: TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:18:01'!
+test05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:22:22'!
+                          test04DepositOfTransferKnowsItsWithdraw
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:26:24' prior: 50332146!
+                           initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	"sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount ."! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:26:26'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:26:26'!
+ERROR!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:29:16' prior: 50332075!
+             send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:29:22' prior: 50332381!
+           send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:30:13'!
+                               initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	! !
+
+Object subclass: #Transference
+	instanceVariableNames: 'value withdraw deposit'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:30:35'!
+Object subclass: #Transference
+	instanceVariableNames: 'value withdraw deposit'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:02' prior: 50332427!
+             initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	withdraw _ aTransferWithdraw.
+	
+	deposit _ aTransferDeposit .
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:05' prior: 50332448!
+                initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	withdraw _ aTransferWithdraw.
+	
+	deposit _ aTransferDeposit.
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:11'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:11'!
+ERROR!
+
+!methodRemoval: Transference #receiver stamp: 'sL 6/7/2022 18:31:28'!
+receiver
+
+	^receiver !
+
+!methodRemoval: Transference #sender stamp: 'sL 6/7/2022 18:31:32'!
+sender
+
+	^sender !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:48'!
+                        withdraw
+
+	^withdraw ! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:57'!
+                        deposit
+
+	^deposit ! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:59'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:59'!
+ERROR!
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:33:20'!
+                              for: aValue With: withdrawCounterpart
+
+	^ self new initializeFor: aValue andCounterpart: withdrawCounterpart.! !
+
+!classDefinition: #TransferDeposit category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:34:33'!
+AccountTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'value counterpart'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:34:31'!
+                          initializeFor: aValue andCounterpart: withdrawCounterpart
+
+	value _ aValue .
+	
+	counterpart _ withdrawCounterpart.! !
+
+!classDefinition: #TransferWithdraw category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:34:59'!
+AccountTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'value counterpart'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:34:58'!
+                       initializeFor: aValue andCounterpart: withdrawCounterpart
+
+	value _ aValue .
+	
+	counterpart _ withdrawCounterpart.! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:35:20' prior: 50332547!
+            initializeFor: aValue andCounterpart: depositCounterpart
+
+	value _ aValue .
+	
+	counterpart _ depositCounterpart.! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:26'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:26'!
+ERROR!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:35:38'!
+       counterpart
+
+	^ counterpart! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:35:42'!
+                   counterpart
+
+	^ counterpart! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:36:01'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:36:12'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:37:55'!
+                 test04DepositAndWithdrawOfTransferKnowsTheirCounterparts
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	! !
+
+!methodRemoval: TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:37:55'!
+test04DepositOfTransferKnowsItsWithdraw
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:39:01' prior: 50331791!
+    test03TransferenceContainsCorrectAmount
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference value) equals: 50 * peso.
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:39:06' prior: 50332621!
+                  test04DepositAndWithdrawOfTransferKnowsTheirCounterparts
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:42:23'!
+test05accountCantTransferToItself
+
+	| originAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: originAccount.
+	
+	
+	! !
+
+TestCase subclass: #OOStackTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #OOStackTest category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:47'!
+TestCase subclass: #OOStackTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!OOStackTest methodsFor: 'test' stamp: 'HernanWilkinson 5/7/2012 11:30'!
+                             test01StackShouldBeEmptyWhenCreated
+
+	| stack |
+	
+	stack := OOStack new.
+	
+	self assert: stack isEmpty! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:29:55'!
+                test02PushAddElementsToTheStack
+
+	| stack |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	
+	self deny: stack isEmpty! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:01'!
+                           test03PopRemovesElementsFromTheStack
+
+	| stack |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	stack pop.
+	
+	self assert: stack isEmpty! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:09'!
+       test04PopReturnsLastPushedObject
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	stack push: pushedObject.
+	
+	self assert: stack pop = pushedObject! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:48'!
+test05StackBehavesLIFO
+
+	| stack firstPushedObject secondPushedObject |
+	
+	stack := OOStack new.
+	firstPushedObject := 'first'.
+	secondPushedObject := 'second'.
+	
+	stack push: firstPushedObject.
+	stack push: secondPushedObject.
+	
+	self assert: stack pop = secondPushedObject.
+	self assert: stack pop = firstPushedObject.
+	self assert: stack isEmpty 
+	! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:20'!
+               test06TopReturnsLastPushedObject
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	
+	stack push: pushedObject.
+	
+	self assert: stack top = pushedObject.
+	! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:24'!
+                         test07TopDoesNotRemoveObjectFromStack
+
+	| stack pushedObject |
+	
+	stack := OOStack new.
+	pushedObject := 'something'.
+	
+	stack push: pushedObject.
+	
+	self assert: stack size = 1.
+	stack top.
+	self assert: stack size = 1.
+	! !
+!OOStackTest methodsFor: 'test' stamp: 'MAM 5/12/2022 15:09:14'!
+                 test08CanNotPopWhenThereAreNoObjectsInTheStack
+
+	| stack  |
+	
+	stack := OOStack new.
+	self
+		should: [ stack pop ]
+		raise: Error - MessageNotUnderstood
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+!OOStackTest methodsFor: 'test' stamp: 'NR 5/13/2020 13:30:31'!
+          test09CanNotPopWhenThereAreNoObjectsInTheStackAndTheStackHadObjects
+
+	| stack  |
+	
+	stack := OOStack new.
+	stack push: 'something'.
+	stack pop.
+	
+	self
+		should: [ stack pop ]
+		raise: Error - MessageNotUnderstood 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+!OOStackTest methodsFor: 'test' stamp: 'HAW 4/14/2017 22:48:44'!
+        test10CanNotTopWhenThereAreNoObjectsInTheStack
+
+	| stack  |
+	
+	stack := OOStack new.
+	self
+		should: [ stack top ]
+		raise: Error - MessageNotUnderstood 
+		withExceptionDo: [ :anError |
+			self assert: anError messageText = OOStack stackEmptyErrorDescription ]
+		
+! !
+
+TestCase subclass: #SentenceFinderByPrefixTest
+	instanceVariableNames: 'anEmptyOOStack anOOStackWithOneElement anOOStackWithManyElements aFinderWithAnEmptyOOStack aFinderWithAnOOStackWithOneElement aFinderWithAnOOStackWithManyElements resultsForAnEmptyOOStack resultsForAnOOStackWithOneElement resultsForAnOOStackWithManyElements resultsForAnOOStackWithNoElementsFound anOOStackWithManyElementsCopy resultsForLowerCaseOOStack'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #SentenceFinderByPrefixTest category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+TestCase subclass: #SentenceFinderByPrefixTest
+	instanceVariableNames: 'anEmptyOOStack anOOStackWithOneElement anOOStackWithManyElements aFinderWithAnEmptyOOStack aFinderWithAnOOStackWithOneElement aFinderWithAnOOStackWithManyElements resultsForAnEmptyOOStack resultsForAnOOStackWithOneElement resultsForAnOOStackWithManyElements resultsForAnOOStackWithNoElementsFound anOOStackWithManyElementsCopy resultsForLowerCaseOOStack'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'sL 5/16/2022 18:32:46'!
+   test01oneElementCorrectlyFoundFromAnOOStackWithOneElement
+
+	self assert: (aFinderWithAnOOStackWithOneElement find: 'Messi') equals: resultsForAnOOStackWithOneElement! !
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'sL 5/16/2022 18:32:52'!
+       test02someElementsCorrectlyFoundFromAnOOStackWithManyElements
+
+	self assert: (aFinderWithAnOOStackWithManyElements find: 'Messi') equals: resultsForAnOOStackWithManyElements! !
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'sL 5/16/2022 18:32:56'!
+                               test03zeroElementsCorrectlyFoundFromAnOOStackWithManyElements
+
+	self assert: (aFinderWithAnOOStackWithManyElements find: 'Nada') equals: resultsForAnOOStackWithNoElementsFound ! !
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'sL 5/16/2022 18:33:24'!
+                            test04originalStackRemainsInOrder
+
+	| anElementFromOriginalStack anElementFromCopyStack firstAuxiliaryOOStack secondAuxiliaryOOStack |
+	firstAuxiliaryOOStack := OOStack new.
+	secondAuxiliaryOOStack := OOStack new.
+
+	self assert: (aFinderWithAnOOStackWithManyElements find: 'Messi') equals: resultsForAnOOStackWithManyElements.
+	
+	(anOOStackWithManyElementsCopy size) timesRepeat: [
+		anElementFromOriginalStack := anOOStackWithManyElements pop.
+		anElementFromCopyStack := anOOStackWithManyElementsCopy pop.
+		self assert: (anElementFromOriginalStack) equals: anElementFromCopyStack.
+		firstAuxiliaryOOStack push: anElementFromOriginalStack.
+		secondAuxiliaryOOStack push: anElementFromCopyStack.
+		].
+	
+	(firstAuxiliaryOOStack size) timesRepeat: [
+		anElementFromOriginalStack := firstAuxiliaryOOStack pop.
+		anElementFromCopyStack := secondAuxiliaryOOStack pop.
+		anOOStackWithManyElements push: anElementFromOriginalStack.
+		anOOStackWithManyElementsCopy push: anElementFromCopyStack.
+		]! !
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'sL 5/16/2022 18:33:38'!
+             test05prefixCantHaveSpaces
+
+	self
+		should: [ aFinderWithAnOOStackWithManyElements find: 'Hansel y Gretel' ]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: SentenceFinderByPrefix prefixCantHaveSpacesErrorDescription equals: anError messageText ]! !
+!SentenceFinderByPrefixTest methodsFor: 'tests' stamp: 'MAM 5/16/2022 18:19:07'!
+         test06finderIsCaseSensitive
+	| emptyCollection |
+	
+	emptyCollection := OrderedCollection new.
+	self assert: (aFinderWithAnOOStackWithOneElement find: 'messi') equals: emptyCollection! !
+!SentenceFinderByPrefixTest methodsFor: 'setup' stamp: 'sL 5/16/2022 18:32:28' overrides: 16961394!
+  setUp
+
+	"Stacks"
+	
+	anEmptyOOStack := OOStack new.
+	
+	anOOStackWithOneElement := OOStack new.
+	anOOStackWithOneElement push: 'Messi'.
+	
+	anOOStackWithManyElements := OOStack new.
+	anOOStackWithManyElements push: 'RodrigoDePaul'.
+	anOOStackWithManyElements push: 'LautaroMartinez'.
+	anOOStackWithManyElements push: 'ElDibu'.
+	anOOStackWithManyElements push: 'DiMaria'.
+	anOOStackWithManyElements push: 'Messi'.
+	anOOStackWithManyElements push: 'Messias'.
+	anOOStackWithManyElements push: 'Messi es crack'.
+	anOOStackWithManyElements push: 'Scaloni es crack'.
+	
+	anOOStackWithManyElementsCopy := OOStack new.
+	anOOStackWithManyElementsCopy push: 'RodrigoDePaul'.
+	anOOStackWithManyElementsCopy push: 'LautaroMartinez'.
+	anOOStackWithManyElementsCopy push: 'ElDibu'.
+	anOOStackWithManyElementsCopy push: 'DiMaria'.
+	anOOStackWithManyElementsCopy push: 'Messi'.
+	anOOStackWithManyElementsCopy push: 'Messias'.
+	anOOStackWithManyElementsCopy push: 'Messi es crack'.
+	anOOStackWithManyElementsCopy push: 'Scaloni es crack'.
+	
+	"Finders"
+	
+	aFinderWithAnOOStackWithOneElement := SentenceFinderByPrefix with: anOOStackWithOneElement.
+	
+	aFinderWithAnOOStackWithManyElements := SentenceFinderByPrefix with: anOOStackWithManyElements.
+	
+	"Results"
+	
+	resultsForAnEmptyOOStack := OrderedCollection new.
+		
+	resultsForAnOOStackWithNoElementsFound := OrderedCollection new.
+	
+	resultsForAnOOStackWithOneElement := OrderedCollection new.
+	resultsForAnOOStackWithOneElement add: 'Messi'.
+	
+	resultsForAnOOStackWithManyElements := OrderedCollection new.
+	resultsForAnOOStackWithManyElements add: 'Messi'.
+	resultsForAnOOStackWithManyElements add: 'Messias'.
+	resultsForAnOOStackWithManyElements add: 'Messi es crack'.
+	
+	resultsForLowerCaseOOStack := OrderedCollection new.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+SentenceFinderByPrefixTest class
+	instanceVariableNames: 'anEmptyStack'!
+
+!classDefinition: 'SentenceFinderByPrefixTest class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+SentenceFinderByPrefixTest class
+	instanceVariableNames: 'anEmptyStack'!
+
+Object subclass: #OOStack
+	instanceVariableNames: 'stackedElements'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #OOStack category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+Object subclass: #OOStack
+	instanceVariableNames: 'stackedElements'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!OOStack methodsFor: 'initialization' stamp: 'sL 5/16/2022 18:29:24' overrides: 16920235!
+                  initialize
+
+	super initialize.
+	
+	stackedElements := OrderedCollection new.! !
+!OOStack methodsFor: 'operations' stamp: 'sL 5/16/2022 18:29:32'!
+               isEmpty
+
+	^stackedElements isEmpty! !
+!OOStack methodsFor: 'operations' stamp: 'sL 5/16/2022 18:29:45'!
+                        pop
+
+	"Esto no es optimo: recibimos el estado desde StateOfOOStack para despues volver a enviarlo a StateOfOOStack.
+	Intentamos encapsular todo allí, pero fallaba."
+	^(StateOfOOStack getStatusOf: self) sendMessagePopAccordingToActualState: self! !
+!OOStack methodsFor: 'operations' stamp: 'sL 5/16/2022 18:29:53'!
+      push: elementToAdd
+
+	stackedElements add: elementToAdd.! !
+!OOStack methodsFor: 'operations' stamp: 'sL 5/16/2022 18:29:59' overrides: 16901663!
+               size
+
+	^stackedElements size.! !
+!OOStack methodsFor: 'operations' stamp: 'sL 5/16/2022 18:30:09'!
+                             top
+
+	"Esto no es optimo: recibimos el estado desde StateOfOOStack para despues volver a enviarlo a StateOfOOStack.
+	Intentamos encapsular todo allí, pero fallaba."
+	^(StateOfOOStack getStatusOf: self) sendMessageTopAccordingToActualState: self! !
+!OOStack methodsFor: 'operations - private' stamp: 'sL 5/16/2022 18:30:31'!
+                            popAuxiliary
+	
+	| unstackedElement |
+	
+	unstackedElement := stackedElements last.
+	
+	stackedElements removeLast.
+	
+	^unstackedElement! !
+!OOStack methodsFor: 'operations - private' stamp: 'sL 5/16/2022 18:30:36'!
+           raiseErrorDueToEmptyStack
+
+	^self error: OOStack stackEmptyErrorDescription! !
+!OOStack methodsFor: 'operations - private' stamp: 'sL 5/16/2022 18:30:40'!
+     topAuxiliary
+
+	^stackedElements last.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+OOStack class
+	instanceVariableNames: ''!
+
+!classDefinition: 'OOStack class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+OOStack class
+	instanceVariableNames: ''!
+!OOStack class methodsFor: 'error descriptions' stamp: 'HernanWilkinson 5/7/2012 11:51'!
+                 stackEmptyErrorDescription
+	
+	^ 'Stack is empty'! !
+
+Object subclass: #SentenceFinderByPrefix
+	instanceVariableNames: 'OOStackAsociated'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #SentenceFinderByPrefix category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+Object subclass: #SentenceFinderByPrefix
+	instanceVariableNames: 'OOStackAsociated'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!SentenceFinderByPrefix methodsFor: 'initialization' stamp: 'sL 5/16/2022 18:30:58'!
+                 initializeWith: AnOOStack
+
+	OOStackAsociated := AnOOStack 
+! !
+!SentenceFinderByPrefix methodsFor: 'operations' stamp: 'MAM 5/16/2022 17:24:41'!
+               find: aPrefix
+	
+	(aPrefix includesSubString: ' ') ifTrue: [self raiseErrorDueToPrefixCantHaveSpaces].
+	
+	^(self orderedCollectionOfElementsIn: OOStackAsociated) select: [: Element | Element beginsWith: aPrefix].
+	
+	! !
+!SentenceFinderByPrefix methodsFor: 'operationsAuxiliaries-private' stamp: 'MAM 5/16/2022 16:53:25'!
+orderedCollectionOfElementsIn: anOOStack
+
+	| anAuxiliaryOrderedCollection anElement anAuxiliaryOOStack |
+	anAuxiliaryOOStack := OOStack new.
+	anAuxiliaryOrderedCollection := OrderedCollection new.
+	
+	(anOOStack size) timesRepeat: [
+		anElement := anOOStack pop.
+		anAuxiliaryOrderedCollection addFirst: anElement.
+		anAuxiliaryOOStack push: anElement.
+		].
+
+	(anAuxiliaryOOStack size) timesRepeat: [
+		anElement := anAuxiliaryOOStack pop.
+		anOOStack push: anElement.
+		].
+
+	^anAuxiliaryOrderedCollection! !
+!SentenceFinderByPrefix methodsFor: 'operationsAuxiliaries-private' stamp: 'MAM 5/16/2022 16:12:57'!
+                               raiseErrorDueToPrefixCantHaveSpaces
+
+	self error: SentenceFinderByPrefix prefixCantHaveSpacesErrorDescription! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+SentenceFinderByPrefix class
+	instanceVariableNames: 'OOStackAsociado'!
+
+!classDefinition: 'SentenceFinderByPrefix class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+SentenceFinderByPrefix class
+	instanceVariableNames: 'OOStackAsociado'!
+!SentenceFinderByPrefix class methodsFor: 'instance creation' stamp: 'MAM 5/16/2022 17:48:54'!
+                        with: AnOOStack
+
+	^SentenceFinderByPrefix new initializeWith: AnOOStack! !
+!SentenceFinderByPrefix class methodsFor: 'error descriptions' stamp: 'sL 5/16/2022 18:31:11'!
+                      prefixCantHaveSpacesErrorDescription
+
+	^ 'Prefixes can not have spaces'! !
+
+Object subclass: #StateOfOOStack
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #StateOfOOStack category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+Object subclass: #StateOfOOStack
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!StateOfOOStack methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:33:50'!
+                sendMessagePopAccordingToActualState: aOOStack
+
+	self subclassResponsibility ! !
+!StateOfOOStack methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:33:56'!
+                      sendMessageTopAccordingToActualState: aOOStack
+
+	self subclassResponsibility ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+StateOfOOStack class
+	instanceVariableNames: ''!
+
+!classDefinition: 'StateOfOOStack class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+StateOfOOStack class
+	instanceVariableNames: ''!
+!StateOfOOStack class methodsFor: 'operations' stamp: 'MAM 5/16/2022 16:29:49'!
+                             getStatusOf: anOOStack
+	
+	| currentStatus |
+	currentStatus := StateOfOOStack subclasses detect: [ : aSubclass | aSubclass isState: anOOStack].
+	
+	^currentStatus new! !
+!StateOfOOStack class methodsFor: 'testing' stamp: 'MAM 5/16/2022 17:39:08'!
+           isState: anOOStack
+
+	self subclassResponsibility ! !
+
+StateOfOOStack subclass: #EmptyState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #EmptyState category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+StateOfOOStack subclass: #EmptyState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!EmptyState methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:35:04' overrides: 50333155!
+                  sendMessagePopAccordingToActualState: aOOStack
+	
+	^aOOStack raiseErrorDueToEmptyStack! !
+!EmptyState methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:34:47' overrides: 50333161!
+                              sendMessageTopAccordingToActualState: aOOStack
+	
+	^aOOStack raiseErrorDueToEmptyStack! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+EmptyState class
+	instanceVariableNames: ''!
+
+!classDefinition: 'EmptyState class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+EmptyState class
+	instanceVariableNames: ''!
+!EmptyState class methodsFor: 'testing' stamp: 'MAM 5/16/2022 17:39:50' overrides: 50333183!
+                    isState: anOOStack
+
+	^anOOStack isEmpty! !
+
+StateOfOOStack subclass: #NotEmptyState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+
+!classDefinition: #NotEmptyState category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+StateOfOOStack subclass: #NotEmptyState
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Stack-Exercise'!
+!NotEmptyState methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:34:53' overrides: 50333155!
+                sendMessagePopAccordingToActualState: aOOStack
+
+	^aOOStack popAuxiliary! !
+!NotEmptyState methodsFor: 'operationsAccordingToState' stamp: 'sL 5/16/2022 18:34:58' overrides: 50333161!
+         sendMessageTopAccordingToActualState: aOOStack
+
+	^aOOStack topAuxiliary! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+NotEmptyState class
+	instanceVariableNames: ''!
+
+!classDefinition: 'NotEmptyState class' category: 'Stack-Exercise' stamp: 'sL 6/7/2022 18:42:48'!
+NotEmptyState class
+	instanceVariableNames: ''!
+!NotEmptyState class methodsFor: 'testing' stamp: 'MAM 5/16/2022 17:40:01' overrides: 50333183!
+                      isState: anOOStack
+
+	^anOOStack isEmpty not! !
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/SolucionEj4/v1.1/Stack-Exercise.st----!
+
+TestCase subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #MarsRoverTests category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:29'!
+TestCase subclass: #MarsRoverTests
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/30/2022 09:24:09'!
+                     test01startsAtX0Y0
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	self assert: (marsRover position = (0@0)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/30/2022 09:12:57'!
+          test02startsLookingNorth
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+
+	self assert: (marsRover direction = #North)! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:00:39'!
+    test03moveForwardOnce
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'f'.
+	
+	self deny: (marsRover position = (0@0)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:53:09'!
+                              test04turnRightOnce
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'r'.
+	
+	self assert: (marsRover direction = #East).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:53:05'!
+                             test05turnLeftOnce
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'l'.
+	
+	self assert: (marsRover direction = #West).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:12:05'!
+                              test06moveBackwardsOnce
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'b'.
+	
+	self assert: (marsRover position = (0@-1)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:11:41'!
+                         test07turnRightTwice
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'rr'.
+	
+	self assert: (marsRover direction = #South).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:20:32'!
+                          test08turnRightThrice
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'rrr'.
+	
+	self assert: (marsRover direction = #West).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:20:36'!
+                         test09turnRightFourTimes
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'rrrr'.
+	
+	self assert: (marsRover direction = #North).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:31:11'!
+                    test10unknownCharacterReceived
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	self 
+		should: [ marsRover receiveStringOfCommands: 'x'. ]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: MarsRover unknownCharacterErrorDescription equals: anError messageText ]
+	! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 11:30:43'!
+      test11unknownCharacterReceivedAlongSideCorrectCharacters
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	self 
+		should: [ marsRover receiveStringOfCommands: 'fbxbr'. ]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: MarsRover unknownCharacterErrorDescription equals: anError messageText ]
+	! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:05:13'!
+        test12turnLeftTwice
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'll'.
+	
+	self assert: (marsRover direction = #South).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:09:49'!
+                           test13moveForwardTwice
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'ff'.
+	
+	self assert: (marsRover position = (0@2)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:11:36'!
+                          test14moveForwardTwiceAfterTurning
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'rff'.
+	
+	self assert: (marsRover position = (2@0)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 17:14:12'!
+             test15moveBackwardsTwice
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'bb'.
+	
+	self assert: (marsRover position = (0@-2)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 18:12:08'!
+                       test16moveBackwardsTwiceAfterTurning
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	marsRover receiveStringOfCommands: 'rbb'.
+	
+	self assert: (marsRover position = (-2@0)).! !
+!MarsRoverTests methodsFor: 'test' stamp: 'sL 5/31/2022 18:35:22'!
+          test17unknownCharacterReceivedAlongSideCorrectCharactersExecutedHalfOfThem
+
+	| marsRover |
+	
+	marsRover := MarsRover new.
+	
+	self 
+		should: [ marsRover receiveStringOfCommands: 'fbxbr'. ]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: MarsRover unknownCharacterErrorDescription equals: anError messageText ].
+		
+	self assert: (marsRover position = (0@0)).
+	! !
+
+Object subclass: #Command
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #Command category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Object subclass: #Command
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!Command methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:25:47'!
+                              execute: aRover
+
+	self subclassResponsibility ! !
+
+Command subclass: #Backwards
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #Backwards category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Command subclass: #Backwards
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!Backwards methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:23:24' overrides: 50333434!
+     execute: aRover
+
+	aRover moveBackwards! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Backwards class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Backwards class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Backwards class
+	instanceVariableNames: ''!
+!Backwards class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:28:46'!
+             isCharacter: aCharacter
+
+	^aCharacter = $b! !
+
+Command subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #Forward category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Command subclass: #Forward
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!Forward methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:24:50' overrides: 50333434!
+                 execute: aRover
+
+	aRover moveForward ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Forward class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Forward class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Forward class
+	instanceVariableNames: ''!
+!Forward class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:28:51'!
+                      isCharacter: aCharacter
+
+	^aCharacter = $f! !
+
+Command subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #Left category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Command subclass: #Left
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!Left methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:25:14' overrides: 50333434!
+                             execute: aRover
+
+	aRover turnLeft ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Left class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Left class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Left class
+	instanceVariableNames: ''!
+!Left class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:28:58'!
+     isCharacter: aCharacter
+
+	^aCharacter = $l! !
+
+Command subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #Right category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Command subclass: #Right
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!Right methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:25:33' overrides: 50333434!
+                         execute: aRover
+
+	aRover turnRight ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+Right class
+	instanceVariableNames: ''!
+
+!classDefinition: 'Right class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Right class
+	instanceVariableNames: ''!
+!Right class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:29:02'!
+isCharacter: aCharacter
+
+	^aCharacter = $r! !
+
+Object subclass: #MarsRover
+	instanceVariableNames: 'position direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #MarsRover category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Object subclass: #MarsRover
+	instanceVariableNames: 'position direction'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!MarsRover methodsFor: 'commandReception' stamp: 'sL 5/31/2022 18:33:25'!
+                              receiveStringOfCommands: stringOfCommands
+
+	| index character command |
+	index _ 0.
+
+	(stringOfCommands size) timesRepeat: [
+		index _ index + 1.
+		character _ (stringOfCommands at: index).
+		
+		command := Command subclasses detect: [ : aSubclass | aSubclass isCharacter: character] ifNone: [self error: MarsRover unknownCharacterErrorDescription.].
+		
+		command new execute: self.
+		"(character = $f) ifTrue: [self moveForward].
+		
+		(character = $b) ifTrue: [self moveBackwards].
+		
+		(character = $r) ifTrue: [self turnRight].
+		
+		(character = $l) ifTrue: [self turnLeft].
+		
+		((character = $f) or: (character = $b) or: (character = $r) or: (character = $l)) ifFalse: [self error: MarsRover unknownCharacterErrorDescription.]
+		]"
+	]! !
+!MarsRover methodsFor: 'movement - private' stamp: 'sL 5/31/2022 18:02:36'!
+              moveEast
+
+	position _ position + (1@0).! !
+!MarsRover methodsFor: 'movement - private' stamp: 'sL 5/31/2022 18:02:32'!
+         moveNorth
+
+	position _ position + (0@1).! !
+!MarsRover methodsFor: 'movement - private' stamp: 'sL 5/31/2022 18:02:27'!
+        moveSouth
+
+	position _ position + (0@-1).! !
+!MarsRover methodsFor: 'movement - private' stamp: 'sL 5/31/2022 18:02:24'!
+       moveWest
+
+	position _ position + (-1@0).! !
+!MarsRover methodsFor: 'movement - private' stamp: 'sL 5/31/2022 17:35:59'!
+        newDirection: aDirection
+
+	direction _ aDirection ! !
+!MarsRover methodsFor: 'initialization' stamp: 'sL 5/31/2022 17:40:28' overrides: 16920235!
+              initialize
+
+	position := 0@0.
+	
+	"direction := #North"
+	
+	"direction := North."
+	
+	direction := North new.
+	! !
+!MarsRover methodsFor: 'information' stamp: 'sL 5/31/2022 17:49:32'!
+           direction
+
+	^direction direction! !
+!MarsRover methodsFor: 'information' stamp: 'sL 5/30/2022 08:49:29'!
+                       position
+
+	^position! !
+!MarsRover methodsFor: 'movement' stamp: 'sL 5/31/2022 18:04:35'!
+      moveBackwards
+	
+	(MarsRoverDirection getCurrentDirection: self) moveBackwardsAccordingToDirection: self.! !
+!MarsRover methodsFor: 'movement' stamp: 'sL 5/31/2022 18:04:41'!
+                  moveForward
+	
+	(MarsRoverDirection getCurrentDirection: self) moveForwardAccordingToDirection: self.! !
+!MarsRover methodsFor: 'movement' stamp: 'sL 5/31/2022 17:57:15'!
+                      turnLeft
+
+	(MarsRoverDirection getCurrentDirection: self) turnLeftAccordingToDirection: self.
+
+	
+! !
+!MarsRover methodsFor: 'movement' stamp: 'sL 5/31/2022 17:57:11'!
+                         turnRight
+	
+	(MarsRoverDirection getCurrentDirection: self) turnRightAccordingToDirection: self.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+MarsRover class
+	instanceVariableNames: ''!
+
+!classDefinition: 'MarsRover class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRover class
+	instanceVariableNames: ''!
+!MarsRover class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 11:25:57'!
+                   unknownCharacterErrorDescription
+
+	^'Unknown character received.'! !
+
+Object subclass: #MarsRoverDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #MarsRoverDirection category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+Object subclass: #MarsRoverDirection
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!MarsRoverDirection methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:22:36'!
+    direction
+
+	self subclassResponsibility ! !
+!MarsRoverDirection methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:33:42'!
+                              isDirection: aRover
+
+	self subclassResponsibility ! !
+!MarsRoverDirection methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:56:28'!
+                    turnLeftAccordingToDirection: aRover
+
+	self subclassResponsibility ! !
+!MarsRoverDirection methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:56:32'!
+   turnRightAccordingToDirection: aRover
+
+	self subclassResponsibility ! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+MarsRoverDirection class
+	instanceVariableNames: ''!
+
+!classDefinition: 'MarsRoverDirection class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRoverDirection class
+	instanceVariableNames: ''!
+!MarsRoverDirection class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:39:27'!
+           getCurrentDirection: aRover
+	
+	| currentDirection |
+	currentDirection := self subclasses detect: [ : aSubclass | aSubclass isDirection: aRover].
+	
+	^currentDirection new! !
+!MarsRoverDirection class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:10:59'!
+                       isDirection: aRover
+
+	self subclassResponsibility ! !
+
+MarsRoverDirection subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #East category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRoverDirection subclass: #East
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!East methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:22:59' overrides: 50333670!
+                               direction
+
+	^#East! !
+!East methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:03:24'!
+  moveBackwardsAccordingToDirection: aRover
+
+	aRover moveWest.! !
+!East methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:59:26'!
+                        moveForwardAccordingToDirection: aRover
+
+	aRover moveEast.! !
+!East methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:55:25' overrides: 50333680!
+      turnLeftAccordingToDirection: aRover
+
+	aRover newDirection: North new.! !
+!East methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:51:15' overrides: 50333685!
+                          turnRightAccordingToDirection: aRover
+
+	aRover newDirection: South new.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+East class
+	instanceVariableNames: ''!
+
+!classDefinition: 'East class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+East class
+	instanceVariableNames: ''!
+!East class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:42:37' overrides: 50333708!
+            isDirection: aRover
+
+	^aRover direction  = #East! !
+
+MarsRoverDirection subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #North category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRoverDirection subclass: #North
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!North methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:23:07' overrides: 50333670!
+                             direction
+
+	^#North! !
+!North methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:03:42'!
+moveBackwardsAccordingToDirection: aRover
+
+	aRover moveSouth.! !
+!North methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:00:48'!
+                      moveForwardAccordingToDirection: aRover
+
+	aRover moveNorth.! !
+!North methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:55:36' overrides: 50333680!
+    turnLeftAccordingToDirection: aRover
+
+	aRover newDirection: West new.! !
+!North methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:52:16' overrides: 50333685!
+                          turnRightAccordingToDirection: aRover
+
+	aRover newDirection: East new.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+North class
+	instanceVariableNames: ''!
+
+!classDefinition: 'North class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+North class
+	instanceVariableNames: ''!
+!North class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:42:43' overrides: 50333708!
+         isDirection: aRover
+
+	^aRover direction  = #North! !
+
+MarsRoverDirection subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #South category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRoverDirection subclass: #South
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!South methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:23:21' overrides: 50333670!
+                            direction
+
+	^#South! !
+!South methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:04:06'!
+moveBackwardsAccordingToDirection: aRover
+
+	aRover moveNorth.! !
+!South methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:01:00'!
+                      moveForwardAccordingToDirection: aRover
+
+	aRover moveSouth.! !
+!South methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:55:49' overrides: 50333680!
+    turnLeftAccordingToDirection: aRover
+
+	aRover newDirection: East new.! !
+!South methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:52:26' overrides: 50333685!
+                          turnRightAccordingToDirection: aRover
+
+	aRover newDirection: West new.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+South class
+	instanceVariableNames: ''!
+
+!classDefinition: 'South class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+South class
+	instanceVariableNames: ''!
+!South class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:42:50' overrides: 50333708!
+         isDirection: aRover
+
+	^aRover direction  = #South! !
+
+MarsRoverDirection subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+
+!classDefinition: #West category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+MarsRoverDirection subclass: #West
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Grupo32-MarsRover'!
+!West methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:23:28' overrides: 50333670!
+direction
+
+	^#West! !
+!West methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:04:16'!
+  moveBackwardsAccordingToDirection: aRover
+
+	aRover moveEast.! !
+!West methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 18:01:11'!
+                        moveForwardAccordingToDirection: aRover
+
+	aRover moveWest.! !
+!West methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:56:04' overrides: 50333680!
+      turnLeftAccordingToDirection: aRover
+
+	aRover newDirection: South new.! !
+!West methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:52:38' overrides: 50333685!
+                          turnRightAccordingToDirection: aRover
+
+	aRover newDirection: North new.! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+West class
+	instanceVariableNames: ''!
+
+!classDefinition: 'West class' category: 'Grupo32-MarsRover' stamp: 'sL 6/7/2022 18:43:30'!
+West class
+	instanceVariableNames: ''!
+!West class methodsFor: 'as yet unclassified' stamp: 'sL 5/31/2022 17:42:58' overrides: 50333708!
+            isDirection: aRover
+
+	^aRover direction  = #West! !
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/SolucionEj5/v1.0/Grupo32-MarsRover.st----!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:45:12' prior: 50332687!
+                   test05accountCantTransferToItself
+
+	| originAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: originAccount.
+	
+	self 
+		should: [ Transference send: 50*peso from: originAccount to: originAccount.]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: Transference cantSendToItselfErrorDescription equals: anError messageText ].
+	
+	
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:45:22' prior: 50333911!
+                      test05accountCantTransferToItself
+
+	| originAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [ Transference send: 50*peso from: originAccount to: originAccount.]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: Transference cantSendToItselfErrorDescription equals: anError messageText ].
+	
+	
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:46:00'!
+  cantSendToItselfErrorDescription
+
+	^'Account cant make a transference to itself.'! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:47:41' prior: 50332404!
+      send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:52:38'!
+                    test06cantTransferANegativeValue
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: -50*peso from: originAccount to: destinationAccount.
+	
+	self 
+		should: []
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferNegativeAmountErrorDescription equals: anError messageText ]
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:54:44' prior: 50333991!
+              test06cantTransferANegativeValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: -50*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferNegativeAmountErrorDescription equals: anError messageText ]
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:55:18'!
+                         cantTransferNegativeAmountErrorDescription
+
+	^'Cant make a negative amount transference.'! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:55:24'!
+FAILURE!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:55:24'!
+FAILURE!
+
+!methodRemoval: Transference #initializeWith:by:to: stamp: 'sL 6/7/2022 18:55:38'!
+initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	"sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount ."!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:56:58' prior: 50333947!
+ send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:57:07' prior: 50334062!
+       send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:57:54'!
+                test06cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:58:05'!
+                  test07cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	! !
+
+!methodRemoval: TransferenceTests #test06cantTransferAZeroValue stamp: 'sL 6/7/2022 18:58:05'!
+test06cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:59:28' prior: 50334092!
+             send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	(anAmount isZero) ifTrue: [
+		self error: Transference cantTransferZeroAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:59:40'!
+cantTransferZeroAmountErrorDescription
+
+	^'Cant make a zero amount transference.'! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08TransactionWorks stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+----SNAPSHOT----(7 June 2022 19:03:31) CuisUniversity-5096.image priorSource: 4557982!
+
+----QUIT----(7 June 2022 19:14:03) CuisUniversity-5096.image priorSource: 85140!

@@ -1,0 +1,3758 @@
+
+
+----STARTUP---- (17 May 2022 23:48:56) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Downloads/ejercicio-parcial-2022-1c.st----!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/17/2022 23:50:39'!
+PASSED!
+
+----STARTUP---- (18 May 2022 10:21:35) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Downloads/ejercicio-parcial-2022-1c.st----!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:37:36'!
+PASSED!
+
+Object subclass: #Combos
+	instanceVariableNames: 'sales'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #Combos category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:39:56'!
+Object subclass: #Combos
+	instanceVariableNames: 'sales'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+Combos subclass: #Combo1
+	instanceVariableNames: 'sales'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+Combos subclass: #Combo1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #Combo1 category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:40:12'!
+Combos subclass: #Combo1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+Object subclass: #Combos
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #Combos category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:40:15'!
+Object subclass: #Combos
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+Combos subclass: #Combo2
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #Combo2 category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:40:19'!
+Combos subclass: #Combo2
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+!Combo1 methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:42:07'!
+volume
+
+	^250*milliliter ! !
+!Combo2 methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:42:27'!
+volume
+
+	^100*milliliter
+! !
+!Combos methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:42:42'!
+volume
+	
+	self subclassResponsibility ! !
+!CoffeeShopSalesSystem methodsFor: 'product volume' stamp: 'sL 5/18/2022 10:43:24' prior: 50332660!
+volumeOf: aProduct
+
+	^aProduct volume ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:43:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:43:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:43:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:43:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:43:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:27'!
+ERROR!
+!CoffeeShopTest methodsFor: 'test objects' stamp: 'sL 5/18/2022 10:43:44' prior: 50332323!
+combo1
+
+	^Combo1 ! !
+!CoffeeShopTest methodsFor: 'test objects' stamp: 'sL 5/18/2022 10:43:49' prior: 50332326!
+combo2
+
+	^Combo2! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:43:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:43:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:43:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:43:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:43:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:43:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:44:08'!
+ERROR!
+!CoffeeShopReward methodsFor: 'testing' stamp: 'sL 5/18/2022 10:44:33' prior: 50332623!
+isForCombo1
+	
+	^product = Combo1! !
+!CoffeeShopReward methodsFor: 'testing' stamp: 'sL 5/18/2022 10:44:38' prior: 50332627!
+isForCombo2
+	
+	^product = Combo2! !
+!RewardRule methodsFor: 'product price' stamp: 'sL 5/18/2022 10:45:45' prior: 50332747!
+priceOf: aProduct
+
+	^aProduct price
+	
+	"aProduct = #Combo1 ifTrue: [ ^150*peso ].
+	aProduct = #Combo2 ifTrue: [ ^120*peso ].
+
+	self error: 'Invalid combo type'"! !
+!Combo1 methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 10:46:00'!
+price
+
+	^150*peso
+! !
+!Combo2 methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 10:46:20'!
+price
+
+	^120*peso ! !
+!Combo1RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 10:46:40' prior: 50332808 overrides: 50332743!
+rewardedProduct
+	
+	^Combo1! !
+!Combo2RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 10:46:45' prior: 50332860 overrides: 50332743!
+rewardedProduct
+	
+	^Combo2! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:46:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:46:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:46:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:46:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:46:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:46:48'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:46:51'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:47:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:47:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:47:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:47:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:47:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:47:24'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:47:30'!
+ERROR!
+
+Combo1 volume!
+
+Combo1!
+!CoffeeShopSalesSystem methodsFor: 'product volume' stamp: 'sL 5/18/2022 10:50:29' prior: 50333000!
+volumeOf: aProduct
+
+	^aProduct volume ! !
+
+Combo1 price!
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/SolucionEj1/Solucion_Ej1_v1.5/AvispasYAbejasParte2-v1.5.st----!
+!Combo1 class methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:53:17'!
+price
+
+	^150*peso
+! !
+!Combo1 class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 10:53:26'!
+volume
+
+	^250*milliliter ! !
+!Combo2 class methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:53:37'!
+price
+
+	^120*peso ! !
+!Combo2 class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 10:53:45'!
+volume
+
+	^100*milliliter
+! !
+!CoffeeShopTest class methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:54:04'!
+volume
+
+	self subclassResponsibility 
+! !
+
+!methodRemoval: CoffeeShopTest class #volume stamp: 'sL 5/18/2022 10:54:13'!
+volume
+
+	self subclassResponsibility 
+!
+!Combos class methodsFor: 'no messages' stamp: 'sL 5/18/2022 10:54:37'!
+volume 
+	
+	self subclassResponsibility ! !
+!Combos class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 10:54:49'!
+price
+ 
+	self subclassResponsibility ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 10:54:52'!
+PASSED!
+
+!methodRemoval: Combo1 #price stamp: 'sL 5/18/2022 10:55:01'!
+price
+
+	^150*peso
+!
+
+!methodRemoval: Combo1 #volume stamp: 'sL 5/18/2022 10:55:05'!
+volume
+
+	^250*milliliter !
+
+!methodRemoval: Combo2 #price stamp: 'sL 5/18/2022 10:55:10'!
+price
+
+	^120*peso !
+
+!methodRemoval: Combo2 #volume stamp: 'sL 5/18/2022 10:55:13'!
+volume
+
+	^100*milliliter
+!
+
+!methodRemoval: Combos #volume stamp: 'sL 5/18/2022 10:55:18'!
+volume
+	
+	self subclassResponsibility !
+!RewardRule methodsFor: 'product price' stamp: 'sL 5/18/2022 10:57:13' prior: 50333135!
+priceOf: aProduct
+
+	^aProduct price! !
+
+Object subclass: #CoffeeShopCustomer
+	instanceVariableNames: 'name'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #CoffeeShopCustomer category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:59:09'!
+Object subclass: #CoffeeShopCustomer
+	instanceVariableNames: 'name'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+CoffeeShopCustomer subclass: #NormalType
+	instanceVariableNames: 'name'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+CoffeeShopCustomer subclass: #NormalType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #NormalType category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 10:59:34'!
+CoffeeShopCustomer subclass: #NormalType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+CoffeeShopCustomer subclass: #GoldType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #GoldType category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 11:00:01'!
+CoffeeShopCustomer subclass: #GoldType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+CoffeeShopCustomer subclass: #SilverType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+
+!classDefinition: #SilverType category: 'AlgoIII-2020-2C-1Parcial' stamp: 'sL 5/18/2022 11:00:05'!
+CoffeeShopCustomer subclass: #SilverType
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AlgoIII-2020-2C-1Parcial'!
+!CoffeeShopCustomer methodsFor: 'type' stamp: 'sL 5/18/2022 11:00:27' prior: 50332565!
+type
+
+	self subclassResponsibility ! !
+!GoldType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:01:09' overrides: 50334185!
+type
+
+	^self! !
+!NormalType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:01:16' overrides: 50334185!
+type
+
+	^self! !
+!SilverType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:01:20' overrides: 50334185!
+type
+
+	^self! !
+!Combo2RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 11:01:48' prior: 50332840 overrides: 50332734!
+createRewardFor: aCustomer 
+	
+	| price |
+	
+	product := self rewardedProduct.
+	
+	aCustomer type = GoldType ifTrue: [ price := (self priceOf: product)/2 ].
+	aCustomer type = SilverType ifTrue: [ price := (self priceOf: product)*3/4 ].
+	aCustomer type = NormalType ifTrue: [ price := (self priceOf: product)*9/10 ].
+	
+	^CoffeeShopReward of: product at: price quantity: self productQuantity! !
+!Combo1RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 11:02:08' prior: 50332790 overrides: 50332734!
+createRewardFor: aCustomer 
+	
+	| price |
+	
+	product := self rewardedProduct.
+	
+	aCustomer type = GoldType ifTrue: [ price := 75*peso ].
+	aCustomer type = SilverType ifTrue: [ price := 83*peso ].
+	aCustomer type = NormalType ifTrue: [ price := 97*peso ].
+	
+	^CoffeeShopReward of: product at: price quantity: self productQuantity! !
+!GoldType class methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:02:28'!
+type
+
+	^self! !
+!NormalType class methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:02:31'!
+type
+
+	^self! !
+!SilverType class methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:02:33'!
+type
+
+	^self! !
+!CoffeeShopCustomer class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:02:36'!
+type
+
+	^self! !
+!CoffeeShopTest methodsFor: 'setUp/tearDown' stamp: 'sL 5/18/2022 11:03:27' prior: 50332313 overrides: 16961394!
+setUp
+
+	adaLovelace := CoffeeShopCustomer named: 'Ada Lovelace' ofType: GoldType .
+	alanKay := CoffeeShopCustomer named: 'Alan Kay' ofType: SilverType.
+	billGates := CoffeeShopCustomer named: 'Bill Gates' ofType: NormalType! !
+!CoffeeShopTest methodsFor: 'setUp/tearDown' stamp: 'sL 5/18/2022 11:03:39' prior: 50334246 overrides: 16961394!
+setUp
+
+	adaLovelace := CoffeeShopCustomer named: 'Ada Lovelace' ofType: GoldType .
+	alanKay := CoffeeShopCustomer named: 'Alan Kay' ofType: SilverType.
+	billGates := CoffeeShopCustomer named: 'Bill Gates' ofType: NormalType.! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:03:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:03:55'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:03:57'!
+ERROR!
+
+!methodRemoval: CoffeeShopCustomer #type stamp: 'sL 5/18/2022 11:04:25'!
+type
+
+	self subclassResponsibility !
+
+!methodRemoval: GoldType #type stamp: 'sL 5/18/2022 11:04:29'!
+type
+
+	^self!
+
+!methodRemoval: NormalType #type stamp: 'sL 5/18/2022 11:04:36'!
+type
+
+	^self!
+
+!methodRemoval: SilverType #type stamp: 'sL 5/18/2022 11:04:40'!
+type
+
+	^self!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:04:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:04:45'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:04:50'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:05:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:05:32'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:34'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:37'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:05:40'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:05:42'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:06:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:06:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:06:56'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:06:56'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:06:57'!
+ERROR!
+!Combo1RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 11:08:19' prior: 50334218 overrides: 50332734!
+createRewardFor: aCustomer 
+	
+	| price |
+	
+	product := self rewardedProduct.
+	
+	"aCustomer type = GoldType ifTrue: [ price := 75*peso ].
+	aCustomer type = SilverType ifTrue: [ price := 83*peso ].
+	aCustomer type = NormalType ifTrue: [ price := 97*peso ]."
+	price := aCustomer combo1RewardPrice
+	
+	^CoffeeShopReward of: product at: price quantity: self productQuantity! !
+!GoldType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:09:07'!
+combo1RewardPrice
+	
+	^75*peso
+	! !
+!NormalType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:10:08'!
+combo1RewardPrice
+
+	^83*peso! !
+!SilverType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:10:50'!
+combo1RewardPrice
+
+	^97*peso.! !
+!GoldType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:13:43'!
+combo2RewardPrice: productPrice
+
+	^productPrice / 2	! !
+!NormalType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:14:39'!
+combo2RewardPrice: productPrice
+
+	^productPrice  * 3 / 4! !
+!SilverType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:15:25'!
+combo2RewardPrice: productPrice
+
+	^productPrice * 9 / 10! !
+!CoffeeShopCustomer class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:15:45'!
+combo1RewardPrice
+
+	self subclassResponsibility ! !
+!CoffeeShopCustomer class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:16:08'!
+combo2RewardPrice: productPrice
+
+	self subclassResponsibility ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:16:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:16:17'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:16:19'!
+ERROR!
+!Combo2RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 11:17:33' prior: 50334202 overrides: 50332734!
+createRewardFor: aCustomer 
+	
+	| price |
+	
+	product := self rewardedProduct.
+
+	price := aCustomer combo2RewardPrice: (self priceOf: product).
+	
+	^CoffeeShopReward of: product at: price quantity: self productQuantity! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:17:36'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:17:36'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:17:38'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:18:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:18:31'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:18:55'!
+ERROR!
+!GoldType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:19:56'!
+combo1RewardPrice
+	
+	^75*peso
+	! !
+!NormalType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:20:05'!
+combo1RewardPrice
+
+	^83*peso! !
+!SilverType methodsFor: 'no messages' stamp: 'sL 5/18/2022 11:20:13'!
+combo1RewardPrice
+
+	^97*peso.! !
+!GoldType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:20:22'!
+combo2RewardPrice: productPrice
+
+	^productPrice / 2	! !
+!NormalType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:20:39'!
+combo2RewardPrice: productPrice
+
+	^productPrice  * 3 / 4! !
+!SilverType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:20:49'!
+combo2RewardPrice: productPrice
+
+	^productPrice * 9 / 10! !
+!CoffeeShopCustomer methodsFor: 'printing' stamp: 'sL 5/18/2022 11:21:02'!
+combo1RewardPrice
+
+	self subclassResponsibility ! !
+!CoffeeShopCustomer methodsFor: 'printing' stamp: 'sL 5/18/2022 11:21:21'!
+combo2RewardPrice: productPrice
+
+	self subclassResponsibility ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:21:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:21:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:21:30'!
+ERROR!
+
+!methodRemoval: CoffeeShopCustomer class #combo1RewardPrice stamp: 'sL 5/18/2022 11:22:01'!
+combo1RewardPrice
+
+	self subclassResponsibility !
+
+!methodRemoval: CoffeeShopCustomer class #combo2RewardPrice: stamp: 'sL 5/18/2022 11:22:03'!
+combo2RewardPrice: productPrice
+
+	self subclassResponsibility !
+
+!methodRemoval: GoldType class #combo1RewardPrice stamp: 'sL 5/18/2022 11:22:08'!
+combo1RewardPrice
+	
+	^75*peso
+	!
+
+!methodRemoval: GoldType class #combo2RewardPrice: stamp: 'sL 5/18/2022 11:22:10'!
+combo2RewardPrice: productPrice
+
+	^productPrice / 2	!
+
+!methodRemoval: NormalType class #combo1RewardPrice stamp: 'sL 5/18/2022 11:22:12'!
+combo1RewardPrice
+
+	^83*peso!
+
+!methodRemoval: NormalType class #combo2RewardPrice: stamp: 'sL 5/18/2022 11:22:15'!
+combo2RewardPrice: productPrice
+
+	^productPrice  * 3 / 4!
+
+!methodRemoval: SilverType class #combo1RewardPrice stamp: 'sL 5/18/2022 11:22:17'!
+combo1RewardPrice
+
+	^97*peso.!
+
+!methodRemoval: SilverType class #combo2RewardPrice: stamp: 'sL 5/18/2022 11:22:19'!
+combo2RewardPrice: productPrice
+
+	^productPrice * 9 / 10!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:22:23'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:23'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:25'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:22:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:22:52'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:22:54'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:24:47'!
+ERROR!
+!GoldType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:26:18'!
+initializeNamed: aName
+
+	name := aName.! !
+!NormalType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:26:23'!
+initializeNamed: aName
+
+	name := aName.! !
+!SilverType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:26:25'!
+initializeNamed: aName
+
+	name := aName.! !
+!CoffeeShopTest methodsFor: 'setUp/tearDown' stamp: 'sL 5/18/2022 11:27:35' prior: 50334257 overrides: 16961394!
+setUp
+
+	"adaLovelace := CoffeeShopCustomer named: 'Ada Lovelace' ofType: GoldType .
+	alanKay := CoffeeShopCustomer named: 'Alan Kay' ofType: SilverType.
+	billGates := CoffeeShopCustomer named: 'Bill Gates' ofType: NormalType."
+	adaLovelace := GoldType named: 'Ada Lovelace'.
+	alanKay := SilverType named: 'Alan Kay'.
+	billGates := NormalType named: 'Bill Gates'.! !
+!CoffeeShopCustomer class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:28:42'!
+named: aName
+
+	^self new initializeNamed: aName! !
+!CoffeeShopCustomer class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:29:09' prior: 50335058!
+named: aName
+
+	self subclassResponsibility ! !
+!GoldType class methodsFor: 'instance creation' stamp: 'sL 5/18/2022 11:29:15' overrides: 50335063!
+named: aName
+
+	^self new initializeNamed: aName! !
+!NormalType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:29:17' overrides: 50335063!
+named: aName
+
+	^self new initializeNamed: aName! !
+!SilverType class methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:29:20' overrides: 50335063!
+named: aName
+
+	^self new initializeNamed: aName! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:29:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:29:22'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:29:22'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:29:22'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:29:22'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:29:22'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:29:29'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:00'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:00'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:00'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:00'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:00'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:08'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:12'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:27'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:27'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:27'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:27'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:30'!
+ERROR!
+!Combo1RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 11:31:50' prior: 50334533 overrides: 50332734!
+createRewardFor: aCustomer 
+	
+	| price |
+	
+	product := self rewardedProduct.
+	
+	"aCustomer type = GoldType ifTrue: [ price := 75*peso ].
+	aCustomer type = SilverType ifTrue: [ price := 83*peso ].
+	aCustomer type = NormalType ifTrue: [ price := 97*peso ]."
+	price := aCustomer combo1RewardPrice.
+	
+	^CoffeeShopReward of: product at: price quantity: self productQuantity! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:54'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:54'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:54'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:31:54'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:31:58'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:32:02'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:32:05'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:32:09'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:35:52'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:35:52'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:35:52'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:35:52'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:35:52'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:36:04'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:36:57'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:14'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:20'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:31'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:31'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:31'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:31'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:57'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:57'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:37:57'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:57'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:37:57'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:15'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:15'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:18'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:18'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:22'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:38:22'!
+FAILURE!
+
+a CoffeeShopReward!
+
+CoffeeShopReward!
+
+alaKayReward quantity!
+
+alaKayReward isForCombo2!
+
+a CoffeeShopReward!
+
+adaLovelaceReward price!
+
+adaLovelaceReward price!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:43:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:44:08'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:44:08'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:44:16'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:44:16'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:44:22'!
+PASSED!
+!NormalType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:45:20' prior: 50334780 overrides: 50334803!
+combo1RewardPrice
+
+	^97*peso! !
+!SilverType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:45:24' prior: 50334784 overrides: 50334803!
+combo1RewardPrice
+
+	^83*peso.! !
+!SilverType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:45:39' prior: 50334798 overrides: 50334807!
+combo2RewardPrice: productPrice
+
+	^productPrice * 3 / 4! !
+!NormalType methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 11:45:43' prior: 50334793 overrides: 50334807!
+combo2RewardPrice: productPrice
+
+	^productPrice  * 9 / 10! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:45:45'!
+PASSED!
+
+!methodRemoval: CoffeeShopCustomer #initializeNamed:ofType: stamp: 'sL 5/18/2022 11:46:21'!
+initializeNamed: aName ofType: aType
+
+	name := aName.
+	type := aType !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:24'!
+PASSED!
+
+!methodRemoval: CoffeeShopCustomer class #named:ofType: stamp: 'sL 5/18/2022 11:46:36'!
+named: aName ofType: aType
+
+	^self new initializeNamed: aName ofType: aType!
+
+!methodRemoval: CoffeeShopCustomer class #type stamp: 'sL 5/18/2022 11:46:40'!
+type
+
+	^self!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:42'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:46:55'!
+PASSED!
+
+!methodRemoval: GoldType class #type stamp: 'sL 5/18/2022 11:46:59'!
+type
+
+	^self!
+
+!methodRemoval: NormalType class #type stamp: 'sL 5/18/2022 11:47:01'!
+type
+
+	^self!
+
+!methodRemoval: SilverType class #type stamp: 'sL 5/18/2022 11:47:04'!
+type
+
+	^self!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:47:09'!
+PASSED!
+!CoffeeShopCustomer methodsFor: 'printing' stamp: 'sL 5/18/2022 11:47:41'!
+initializeNamed: aName
+
+	self subclassResponsibility ! !
+!CoffeeShopTest methodsFor: 'setUp/tearDown' stamp: 'sL 5/18/2022 11:49:36' prior: 50335043 overrides: 16961394!
+setUp
+
+	adaLovelace := GoldType named: 'Ada Lovelace'.
+	alanKay := SilverType named: 'Alan Kay'.
+	billGates := NormalType named: 'Bill Gates'.! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:51:21'!
+PASSED!
+!CoffeeShopTest methodsFor: 'setUp/tearDown' stamp: 'sL 5/18/2022 11:56:23' prior: 50335935 overrides: 16961394!
+setUp
+
+	adaLovelace := GoldType named: 'Ada Lovelace'.
+	alanKay := SilverType named: 'Alan Kay'.
+	billGates := NormalType named: 'Bill Gates'.
+	salesSystem := CoffeeShopSalesSystem new.! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:29'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 11:56:32' prior: 50332330!
+test01ThereAreNoSalesWhenSalesSystemIsCreated
+
+	self assert: (salesSystem salesMadeTo: adaLovelace) isEmpty! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:34'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:35'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 11:56:40' prior: 50332338!
+test02CanQuerySalesByCustomer
+
+	| salesToAdaLovelace |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	
+	salesToAdaLovelace := salesSystem salesMadeTo: adaLovelace.
+	self assert: 1 equals: salesToAdaLovelace size.
+	self assert: 1 equals: (salesToAdaLovelace count: [ :aProduct | aProduct = self combo1 ])! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 11:56:46' prior: 50332352!
+test03SalesAreDistinguishedByCustomer
+
+	| salesToAdaLovelace salesToAlanKay |
+	
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo2.
+
+	salesToAdaLovelace := salesSystem salesMadeTo: adaLovelace.
+	self assert: 2 equals: salesToAdaLovelace size.
+	self assert: 2 equals: (salesToAdaLovelace count: [ :aProduct | aProduct = self combo1 ]).
+
+	salesToAlanKay := salesSystem salesMadeTo: alanKay.
+	self assert: 1 equals: salesToAlanKay size.
+	self assert: 1 equals: (salesToAlanKay  count: [ :aProduct | aProduct = self combo2 ])! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:56:48'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 11:56:53' prior: 50332376!
+test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered
+
+	| volumeSoldToCustomer |
+
+	volumeSoldToCustomer := salesSystem volumeSoldTo: adaLovelace.
+
+	self assert: 0*milliliter equals: volumeSoldToCustomer! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 11:56:56' prior: 50332387!
+test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer
+
+	| volumeSoldToCustomer |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+
+	volumeSoldToCustomer := salesSystem volumeSoldTo: adaLovelace.
+
+	self assert: 250*milliliter equals: volumeSoldToCustomer ! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 11:57:00' prior: 50332400!
+test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer
+
+	| volumeSoldToCustomer |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo2.
+
+	volumeSoldToCustomer := salesSystem volumeSoldTo: adaLovelace.
+
+	self assert: 100*milliliter equals: volumeSoldToCustomer ! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 11:57:03' prior: 50332413!
+test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts
+
+	| volumeSoldToCustomer |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo2.
+
+	volumeSoldToCustomer := salesSystem volumeSoldTo: adaLovelace.
+
+	self assert: (250*milliliter)+(100*milliliter) equals: volumeSoldToCustomer ! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:08' prior: 50332428!
+test08NoRewardExpectedWhenCustomerHasNotBuyAnything
+
+	salesSystem rewardOf: adaLovelace ifNone: [ ^self ].
+	
+	self failWith: 'No reward expected when customer has not buy anything'! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:12' prior: 50332438!
+test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds
+
+	| adaLovelaceReward |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo2.
+
+	adaLovelaceReward := salesSystem rewardOf: adaLovelace ifNone: [ self fail ].
+
+	self assert: 1 equals: adaLovelaceReward quantity.
+	self assert: adaLovelaceReward isForCombo2.
+	self assert: 60*peso equals: adaLovelaceReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:16' prior: 50332457!
+test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds
+
+	| alaKayReward |
+
+	salesSystem registerSaleTo: alanKay of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo2.
+
+	alaKayReward := salesSystem rewardOf: alanKay ifNone: [ self fail ].
+
+	self assert: 1 equals: alaKayReward quantity.
+	self assert: alaKayReward isForCombo2.
+	self assert: 120*3/4*peso equals: alaKayReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:19' prior: 50332475!
+test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds
+
+	| billGatesReward |
+
+	salesSystem registerSaleTo: billGates of: self combo1.
+	salesSystem registerSaleTo: billGates of: self combo2.
+
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+
+	self assert: 1 equals: billGatesReward quantity.
+	self assert: billGatesReward isForCombo2.
+	self assert: 120*9/10*peso equals: billGatesReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:24' prior: 50332493!
+test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds
+
+	| adaLovelaceReward |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo2.
+
+	adaLovelaceReward := salesSystem rewardOf: adaLovelace ifNone: [ self fail ].
+
+	self assert: 2 equals: adaLovelaceReward quantity.
+	self assert: adaLovelaceReward isForCombo1.
+	self assert: 75*peso equals: adaLovelaceReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:27' prior: 50332513!
+test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds
+
+	| alanKayReward |
+
+	salesSystem registerSaleTo: alanKay of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo2.
+
+	alanKayReward := salesSystem rewardOf: alanKay ifNone: [ self fail ].
+
+	self assert: 2 equals: alanKayReward quantity.
+	self assert: alanKayReward isForCombo1.
+	self assert: 83*peso equals: alanKayReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 11:57:30' prior: 50332532!
+test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds
+
+	| billGatesReward |
+
+	salesSystem registerSaleTo: billGates of: self combo1.
+	salesSystem registerSaleTo: billGates of: self combo1.
+	salesSystem registerSaleTo: billGates of: self combo2.
+
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+
+	self assert: 2 equals: billGatesReward quantity.
+	self assert: billGatesReward isForCombo1.
+	self assert: 97*peso equals: billGatesReward price.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 11:57:32'!
+PASSED!
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 12:14:06'!
+sellTwoCombo1AndOneCombo2To: aPerson! !
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 12:14:26' prior: 50336439!
+sellTwoCombo1AndOneCombo2To: aPerson
+
+	salesSystem registerSaleTo: aPerson of: self combo1.
+	salesSystem registerSaleTo: aPerson of: self combo1.
+	salesSystem registerSaleTo: aPerson of: self combo2.! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:14:51' prior: 50336365!
+test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds
+
+	| billGatesReward |
+	
+	self sellTwoCombo1AndOneCombo2To: billGates.
+
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+
+	self assert: 2 equals: billGatesReward quantity.
+	self assert: billGatesReward isForCombo1.
+	self assert: 97*peso equals: billGatesReward price.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:14:54'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:15:16' prior: 50336347!
+test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds
+
+	| alanKayReward |
+	
+	self sellTwoCombo1AndOneCombo2To: alanKay.
+
+	alanKayReward := salesSystem rewardOf: alanKay ifNone: [ self fail ].
+
+	self assert: 2 equals: alanKayReward quantity.
+	self assert: alanKayReward isForCombo1.
+	self assert: 83*peso equals: alanKayReward price.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:17'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:15:28' prior: 50336328!
+test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds
+
+	| adaLovelaceReward |
+	
+	self sellTwoCombo1AndOneCombo2To: adaLovelace.
+
+	adaLovelaceReward := salesSystem rewardOf: adaLovelace ifNone: [ self fail ].
+
+	self assert: 2 equals: adaLovelaceReward quantity.
+	self assert: adaLovelaceReward isForCombo1.
+	self assert: 75*peso equals: adaLovelaceReward price.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:15:29'!
+PASSED!
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 12:15:58'!
+sellOneCombo1AndOneCombo2To: aPerson
+
+	salesSystem registerSaleTo: aPerson of: self combo1.
+	salesSystem registerSaleTo: aPerson of: self combo2.! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:16:20' prior: 50336276!
+test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds
+
+	| adaLovelaceReward |
+
+	self sellOneCombo1AndOneCombo2To: adaLovelace.
+
+	adaLovelaceReward := salesSystem rewardOf: adaLovelace ifNone: [ self fail ].
+
+	self assert: 1 equals: adaLovelaceReward quantity.
+	self assert: adaLovelaceReward isForCombo2.
+	self assert: 60*peso equals: adaLovelaceReward price.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:16:22'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:16:31' prior: 50336294!
+test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds
+
+	| alaKayReward |
+
+	self sellOneCombo1AndOneCombo2To: alanKay.
+
+	alaKayReward := salesSystem rewardOf: alanKay ifNone: [ self fail ].
+
+	self assert: 1 equals: alaKayReward quantity.
+	self assert: alaKayReward isForCombo2.
+	self assert: 120*3/4*peso equals: alaKayReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:16:56' prior: 50336311!
+test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds
+
+	| billGatesReward |
+
+	self sellOneCombo1AndOneCombo2To: billGates .
+	
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+
+	self assert: 1 equals: billGatesReward quantity.
+	self assert: billGatesReward isForCombo2.
+	self assert: 120*9/10*peso equals: billGatesReward price.
+! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 12:17:38' prior: 50336253!
+test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts
+
+	| volumeSoldToCustomer |
+
+	self sellOneCombo1AndOneCombo2To: adaLovelace .
+
+	volumeSoldToCustomer := salesSystem volumeSoldTo: adaLovelace.
+
+	self assert: (250*milliliter)+(100*milliliter) equals: volumeSoldToCustomer ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:17:44'!
+PASSED!
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 12:28:43'!
+assertThat: aCustomerReward IsForCombo1At2QuantityFor: priceReward	
+	
+	self assert: 2 equals: aCustomerReward quantity.
+	self assert: aCustomerReward isForCombo1.
+	self assert: priceReward equals: aCustomerReward price.! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:29:24' prior: 50336454!
+test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds
+
+	| billGatesReward |
+	
+	self sellTwoCombo1AndOneCombo2To: billGates.
+
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+	
+	self assertThat: billGatesReward IsForCombo1At2QuantityFor: 97*peso.	
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:25'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:29:37' prior: 50336852!
+test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds
+
+	| billGatesReward |
+	
+	self sellTwoCombo1AndOneCombo2To: billGates.
+
+	billGatesReward := salesSystem rewardOf: billGates ifNone: [ self fail ].
+	
+	self assertThat: (salesSystem rewardOf: billGates ifNone: [ self fail ]) IsForCombo1At2QuantityFor: 97*peso.	
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:29:43'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:29:49' prior: 50336920!
+test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds
+
+	self sellTwoCombo1AndOneCombo2To: billGates.
+	
+	self assertThat: (salesSystem rewardOf: billGates ifNone: [ self fail ]) IsForCombo1At2QuantityFor: 97*peso.	
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:30:26' prior: 50336525!
+test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds
+	
+	self sellTwoCombo1AndOneCombo2To: alanKay.
+	
+	self assertThat: (salesSystem rewardOf: alanKay ifNone: [ self fail ]) IsForCombo1At2QuantityFor: 83*peso.! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:30:28'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:31:14' prior: 50336595!
+test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds
+	
+	self sellTwoCombo1AndOneCombo2To: adaLovelace.
+
+	self assertThat: (salesSystem rewardOf: adaLovelace ifNone: [ self fail ]) IsForCombo1At2QuantityFor: 75*peso.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:31:15'!
+PASSED!
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 12:32:53'!
+assertThat: aCustomerReward IsForCombo2At1QuantityFor: priceReward	
+	
+	self assert: 1 equals: aCustomerReward quantity.
+	self assert: aCustomerReward isForCombo2.
+	self assert: priceReward equals: aCustomerReward price.
+	
+	! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:33:56' prior: 50336759!
+test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds
+
+	self sellOneCombo1AndOneCombo2To: billGates .
+	
+	self assertThat: (salesSystem rewardOf: billGates ifNone: [ self fail ]) IsForCombo2At1QuantityFor: 120*9/10*peso.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:33:58'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:34:46' prior: 50336744!
+test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds
+
+	self sellOneCombo1AndOneCombo2To: alanKay.
+	
+	self assertThat: (salesSystem rewardOf: alanKay ifNone: [ self fail ]) IsForCombo2At1QuantityFor: 120*3/4*peso.
+! !
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 12:35:13' prior: 50336673!
+test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds
+
+	self sellOneCombo1AndOneCombo2To: adaLovelace.
+	
+	self assertThat: (salesSystem rewardOf: adaLovelace ifNone: [ self fail ]) IsForCombo2At1QuantityFor: 60*peso.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:35:15'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 12:37:00' prior: 50336775!
+test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts
+
+	self sellOneCombo1AndOneCombo2To: adaLovelace .
+
+	self assert: (250*milliliter)+(100*milliliter) equals: (salesSystem volumeSoldTo: adaLovelace).! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:37:01'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 12:37:20' prior: 50336241!
+test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer
+
+	salesSystem registerSaleTo: adaLovelace of: self combo2.
+
+	self assert: 100*milliliter equals: (salesSystem volumeSoldTo: adaLovelace) ! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 12:37:38' prior: 50336229!
+test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+
+	self assert: 250*milliliter equals: (salesSystem volumeSoldTo: adaLovelace) ! !
+!CoffeeShopTest methodsFor: 'tests - volume sold' stamp: 'sL 5/18/2022 12:37:55' prior: 50336219!
+test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered
+
+	self assert: 0*milliliter equals: (salesSystem volumeSoldTo: adaLovelace)! !
+
+----SNAPSHOT----(18 May 2022 12:39:16) CuisUniversity-5096.image priorSource: 4557982!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 12:39:43'!
+PASSED!
+!Combo1 methodsFor: 'no messages' stamp: 'sL 5/18/2022 13:32:49'!
+price
+
+	^150*peso
+! !
+
+!methodRemoval: Combo1 class #price stamp: 'sL 5/18/2022 13:32:56'!
+price
+
+	^150*peso
+!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:00'!
+PASSED!
+
+!methodRemoval: Combo2 class #price stamp: 'sL 5/18/2022 13:33:17'!
+price
+
+	^120*peso !
+!Combo2 methodsFor: 'no messages' stamp: 'sL 5/18/2022 13:33:20'!
+price
+
+	^120*peso ! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:21'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:21'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:21'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:21'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:27'!
+ERROR!
+
+!methodRemoval: Combos class #price stamp: 'sL 5/18/2022 13:33:46'!
+price
+ 
+	self subclassResponsibility !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:59'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:59'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:33:59'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:33:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:34:02'!
+ERROR!
+!Combo2RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 13:35:57' prior: 50333156 overrides: 50332743!
+rewardedProduct
+	
+	^Combo2 new! !
+!Combo1RewardRule methodsFor: 'reward creation' stamp: 'sL 5/18/2022 13:36:03' prior: 50333151 overrides: 50332743!
+rewardedProduct
+	
+	^Combo1 new! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:36:07'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:36:07'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:36:10'!
+FAILURE!
+!CoffeeShopReward methodsFor: 'testing' stamp: 'sL 5/18/2022 13:37:19' prior: 50333131!
+isForCombo2
+	
+	^product class = Combo2! !
+!CoffeeShopReward methodsFor: 'testing' stamp: 'sL 5/18/2022 13:37:25' prior: 50333127!
+isForCombo1
+	
+	^product class = Combo1! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:37:31'!
+PASSED!
+!CoffeeShopTest methodsFor: 'test objects' stamp: 'sL 5/18/2022 13:39:42' prior: 50333060!
+combo1
+
+	^Combo1 new! !
+!CoffeeShopTest methodsFor: 'test objects' stamp: 'sL 5/18/2022 13:39:46' prior: 50333064!
+combo2
+
+	^Combo2 new! !
+!CoffeeShopTest methodsFor: 'test objects' stamp: 'sL 5/18/2022 13:40:10' prior: 50337770!
+combo2
+
+	^Combo2 new! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:40:46'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:40:46'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:40:46'!
+FAILURE!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:40:46'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:40:46'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:40:46'!
+ERROR!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:40:50'!
+FAILURE!
+!Combo1 methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:43:02'!
+volume
+
+	^250*milliliter ! !
+!Combo2 methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:43:15'!
+volume
+
+	^100*milliliter
+! !
+
+!methodRemoval: Combo2 class #volume stamp: 'sL 5/18/2022 13:43:23'!
+volume
+
+	^100*milliliter
+!
+
+!methodRemoval: Combo1 class #volume stamp: 'sL 5/18/2022 13:43:27'!
+volume
+
+	^250*milliliter !
+
+!methodRemoval: Combos class #volume stamp: 'sL 5/18/2022 13:43:34'!
+volume 
+	
+	self subclassResponsibility !
+!Combos methodsFor: 'no messages' stamp: 'sL 5/18/2022 13:43:43'!
+volume 
+	
+	self subclassResponsibility ! !
+!Combos methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:43:46'!
+price 
+	
+	self subclassResponsibility ! !
+!Combos methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:46:00' overrides: 16901772!
+= aCombo
+
+"	^aCombo = C"
+
+	! !
+!Combos methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:46:55' prior: 50337862 overrides: 16901772!
+= aCombo
+
+	^aCombo = self class
+
+	! !
+!Combos methodsFor: 'as yet unclassified' stamp: 'sL 5/18/2022 13:47:01' prior: 50337867 overrides: 16901772!
+= aCombo
+
+	^aCombo class = self class
+
+	! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 13:48:08'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - rewards' stamp: 'sL 5/18/2022 13:52:51' prior: 50337000!
+test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds
+	
+	self sellTwoCombo1AndOneCombo2To: alanKay.
+	
+	self assertThat: (salesSystem rewardOf: alanKay ifNone: [ self fail ]) IsForCombo1At2QuantityFor: 83*peso.! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:04:53' prior: 50336127!
+test02CanQuerySalesByCustomer
+
+	| salesToAdaLovelace |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	
+	"salesToAdaLovelace := salesSystem salesMadeTo: adaLovelace.
+	self assert: 1 equals: salesToAdaLovelace size.
+	self assert: 1 equals: (salesToAdaLovelace count: [ :aProduct | aProduct = self combo1 ])."
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 1 OfType: self combo1.! !
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 14:05:31'!
+assertThat: customerSales are: quantityOfSales ofType: comboType
+	! !
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 14:06:59' prior: 50337958!
+assertThat: customerSales are: quantityOfSales ofType: comboType
+
+	self assert: quantityOfSales equals: customerSales size.
+	self assert: quantityOfSales equals: (customerSales count: [ :aProduct | aProduct = comboType]).! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:07:39' prior: 50337942!
+test02CanQuerySalesByCustomer
+
+	| salesToAdaLovelace |
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	
+	"salesToAdaLovelace := salesSystem salesMadeTo: adaLovelace.
+	self assert: 1 equals: salesToAdaLovelace size.
+	self assert: 1 equals: (salesToAdaLovelace count: [ :aProduct | aProduct = self combo1 ])."
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 1 OfType: self combo1.! !
+!CoffeeShopTest methodsFor: 'aux - private' stamp: 'sL 5/18/2022 14:07:57'!
+assertThat: customerSales Are: quantityOfSales OfType: comboType
+
+	self assert: quantityOfSales equals: customerSales size.
+	self assert: quantityOfSales equals: (customerSales count: [ :aProduct | aProduct = comboType]).! !
+
+!methodRemoval: CoffeeShopTest #assertThat:are:ofType: stamp: 'sL 5/18/2022 14:07:57'!
+assertThat: customerSales are: quantityOfSales ofType: comboType
+
+	self assert: quantityOfSales equals: customerSales size.
+	self assert: quantityOfSales equals: (customerSales count: [ :aProduct | aProduct = comboType]).!
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:08:05'!
+PASSED!
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:08:09' prior: 50337974!
+test02CanQuerySalesByCustomer
+
+	
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 1 OfType: self combo1.! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:08:13' prior: 50338066!
+test02CanQuerySalesByCustomer
+
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 1 OfType: self combo1.! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:08:51' prior: 50336140!
+test03SalesAreDistinguishedByCustomer
+
+	| salesToAlanKay |
+	
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo2.
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 2 OfType: self combo1.
+
+	self assertThat: (salesSystem salesMadeTo: alanKay) Are: 1 OfType: self combo2.
+
+	salesToAlanKay := salesSystem salesMadeTo: alanKay.
+	self assert: 1 equals: salesToAlanKay size.
+	self assert: 1 equals: (salesToAlanKay  count: [ :aProduct | aProduct = self combo2 ])! !
+!CoffeeShopTest methodsFor: 'tests - sales' stamp: 'sL 5/18/2022 14:08:58' prior: 50338084!
+test03SalesAreDistinguishedByCustomer
+	
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: adaLovelace of: self combo1.
+	salesSystem registerSaleTo: alanKay of: self combo2.
+	
+	self assertThat: (salesSystem salesMadeTo: adaLovelace) Are: 2 OfType: self combo1.
+
+	self assertThat: (salesSystem salesMadeTo: alanKay) Are: 1 OfType: self combo2.
+! !
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/18/2022 14:09:00'!
+PASSED!
+
+----SNAPSHOT----(18 May 2022 14:09:39) CuisUniversity-5096.image priorSource: 183374!
+
+----QUIT----(18 May 2022 14:17:14) CuisUniversity-5096.image priorSource: 208820!
+
+----STARTUP---- (18 May 2022 17:47:33) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Cuis/AlgoIII-2021-1C-1erParcial-enunciado.st----!
+
+!testRun: #ExtractorTest #test01UnExtractorSinCombustibleNoExtraeMenasNiLeSobraEnergia stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test02UnExtractorConUnTrozoDeMaderaExtraeMenasSegunLaEnergiaGenerada stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test03UnExtractorConUnaMenaDeCarbonExtraeMenasSegunLaEnergiaGenerada stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test04UnExtractorConUnLitroDeGasoilExtraeMenasSegunLaEnergiaGenerada stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test05UnExtractorMasDeUnaUnidadDeCombustibleExtraeMenasSegunLaEnergiaGenerada stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test06UnExtractorConDiferentesTiposDeCombustibleExtraeMenasSegunLaEnergiaGenerada stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test07UnExtractorConMotorDeSolidosOptimizaElRendimientoDeLaMadera stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test08UnExtractorConMotorDeSolidosOptimizaElRendimientoDelCarbon stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test09UnExtractorConMotorDeSolidosDegradaElRendimientoDelGasoil stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test10UnExtractorDeCarbonPuedeUsarSuProductoComoCombustible stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test11UnExtractorConMotorUniversalDesgastadoTieneUnPeorRendimiento stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+!testRun: #ExtractorTest #test12UnExtractorConMotorDeSolidosDesgastadoTieneUnPeorRendimiento stamp: 'sL 5/18/2022 17:48:02'!
+PASSED!
+
+----SNAPSHOT----(18 May 2022 18:20:45) CuisUniversity-5096.image priorSource: 208907!
+
+----QUIT----(18 May 2022 18:20:51) CuisUniversity-5096.image priorSource: 225621!
+
+----STARTUP---- (19 May 2022 15:20:13) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+!testRun: #CoffeeShopTest #test01ThereAreNoSalesWhenSalesSystemIsCreated stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test02CanQuerySalesByCustomer stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test03SalesAreDistinguishedByCustomer stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test04VolumeSoldToCustomerIsZeroWhenCustomerHasNoSaleRegistered stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test05VolumeIs_250_WhenOnlyCombo1WasSoldToCustomer stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test06VolumeIs_100_WhenOnlyCombo2WasSoldToCustomer stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test07VolumeSoldToCustomerIsTheSumOfAllSoldProducts stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test08NoRewardExpectedWhenCustomerHasNotBuyAnything stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test09GoldCustomerGetsRewardedWithOneCombo2With50PercentItsPriceWhenRule1Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test10SilverCustomerGetsRewardedWithOneCombo2With75PercentItsPriceWhenRule1Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test11NormalCustomerGetsRewardedWithOneCombo2With90PercentItsPriceWhenRule1Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test12GoldCustomerGetsRewardedWithOneCombo1At75PesosWhenRule2Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test13SilverCustomerGetsRewardedWithOneCombo1At83PesosWhenRule2Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!
+
+!testRun: #CoffeeShopTest #test14NormalCustomerGetsRewardedWithOneCombo1At97PesosWhenRule2Holds stamp: 'sL 5/19/2022 15:20:59'!
+PASSED!

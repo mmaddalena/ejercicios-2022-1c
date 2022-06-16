@@ -1,0 +1,4674 @@
+
+
+----STARTUP---- (28 March 2022 19:32:46) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+1.!
+
+-1.!
+
+-1.!
+
+ -1 !
+
+ -1 !
+
+ -1 !
+
+ -1 !
+
+ -1 !
+
+ -1 !
+
+3.14!
+
+3.14!
+
+3.14.!
+
+true.!
+
+false.!
+
+nil.!
+
+meter.!
+
+centimeter.!
+
+hour.!
+
+day.!
+
+minute.!
+
+hour.
+minute.
+day.!
+
+hour.
+minute.
+!
+
+'hola'.!
+
+$h.!
+
+'hola'.!
+
+!classDefinition: #AlanTuring category: 'Workspace-Objects' stamp: 'SL 3/28/2022 20:44:38'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+AlanTuring.!
+
+AlanTuring. AlanTuring !
+
+ AlanTuring !
+
+ AlanTuring !
+
+ AlanTuring !
+
+AlanTuring.!
+
+AlanTuran!
+
+ nil !
+
+ nil !
+
+ nil !
+
+ nil !
+
+10 factorial.!
+
+100 factorial.!
+
+100 factorial / 99 factorial.!
+
+true not.!
+
+false not.!
+
+true & true.!
+
+true & false.!
+
+true | false.!
+
+false | false.!
+
+10*meter.!
+
+1*meter.!
+
+(10*meter)+(20*meter).!
+
+(10meter)+(20meter).!
+
+(10*meter)+(200*centimeter).!
+
+(10*meter)+(201*centimeter).!
+
+(10*kilometer)+(201*centimeter).!
+
+(10*kilometer)+(201*meter).!
+
+10*hour.!
+
+(10*hour)+(60*minute).!
+
+(10*hour)+(60*minute) convertTo: hour.!
+
+(10*hour)+(60*minute) convertTo: minute. 11 * hours !
+
+(10*hour)+(60*minute) convertTo: minute.!
+
+March/21.!
+
+March/21/2019.!
+
+January/1/2019 distanceTo: March/21/2019.!
+
+March/21/2019 at: 18:30.!
+
+ObjectBuilder create: #AnObject asChildOf: DenotativeObject collaboratorNames: '' in: 'Workspace-Objects'!
+
+!classDefinition: #AnObject category: 'Workspace-Objects' stamp: 'SL 3/28/2022 21:10:55'!
+DenotativeObject subclass: #AnObject
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+!classDefinition: 'AnObject class' category: 'Workspace-Objects' stamp: 'SL 3/28/2022 21:10:55'!
+AnObject class
+	instanceVariableNames: ''!
+
+turnOn.!
+!AnObject class methodsFor: 'nil' stamp: 'SL 3/28/2022 21:15:13'!
+turnOn! !
+!AnObject class methodsFor: 'nil' stamp: 'SL 3/28/2022 21:17:04'!
+turnOff! !
+!AnObject class methodsFor: 'as yet unclassified' stamp: 'SL 3/28/2022 21:17:38'!
+speedUp! !
+!AnObject class methodsFor: 'as yet unclassified' stamp: 'SL 3/28/2022 21:17:45' overrides: 16901488!
+break! !
+!AnObject class methodsFor: 'as yet unclassified' stamp: 'SL 3/28/2022 21:19:38'!
+openTrunk! !
+
+!classRenamed: #AnObject as: #Car stamp: 'SL 3/28/2022 21:20:33'!
+Smalltalk renameClassNamed: #AnObject as: #Car!
+!Car class methodsFor: 'nil' stamp: 'SL 3/28/2022 21:21:27'!
+asHtml! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 3/28/2022 21:21:31'!
+save! !
+
+----STARTUP---- (31 March 2022 06:13:14) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #AlanTuring asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanTuring category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:18:00'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:18:00'!
+AlanTuring class
+	instanceVariableNames: ''!
+
+AlanTuring dateOfBirth.!
+
+AlanTuring printString.!
+
+AlanTuring dateOfBirth.!
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 3/31/2022 06:21:42'!
+dateOfBirth
+	self shouldBeImplemented.! !
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 3/31/2022 06:22:19' prior: 50473845!
+dateOfBirth
+	June/23/1912! !
+
+AlanTuring dateOfBirth.!
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 3/31/2022 06:24:50' prior: 50473850!
+dateOfBirth
+	^June/23/1912! !
+
+AlanTuring dateOfBirth.!
+
+ObjectBuilder create: #UnObjeto asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #UnObjeto category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:28:06'!
+DenotativeObject subclass: #UnObjeto
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'UnObjeto class' category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:28:06'!
+UnObjeto class
+	instanceVariableNames: ''!
+
+ObjectBuilder create: #JohnVonNeumann asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #JohnVonNeumann category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:31:17'!
+DenotativeObject subclass: #JohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'JohnVonNeumann class' category: 'DenotativeObject-Morph' stamp: 'SL 3/31/2022 06:31:17'!
+JohnVonNeumann class
+	instanceVariableNames: ''!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'SL 3/31/2022 06:32:15'!
+dateOfBirth
+	^December/28/1903! !
+
+JohnVonNeumann dateOfBirth inspect!
+
+----STARTUP---- (31 March 2022 19:01:10) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #Algo3 asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo33'!
+
+!classDefinition: #Algo3 category: 'Algo33' stamp: 'SL 3/31/2022 19:12:06'!
+DenotativeObject subclass: #Algo3
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo33'!
+
+!classDefinition: 'Algo3 class' category: 'Algo33' stamp: 'SL 3/31/2022 19:12:06'!
+Algo3 class
+	instanceVariableNames: ''!
+
+"Hola" size.!
+
+"Hola" size.!
+
+'Hola' size.!
+
+100 factorial.!
+
+'Hola' size even.!
+
+10 + 20.!
+
+'Hola' at: 1.!
+
+'Hola' at: 2. $H !
+
+'Hola' at: 2. !
+
+'Hola' size + 'Chau' size.!
+
+'Hola', 'Chau'.!
+
+'Hola', 'Chau' size.!
+
+'Hola', 'Chau' size.!
+
+('Hola', 'Chau') size.!
+
+'hola gente!!' copyFrom: 'hola' size + 1 to: 11.!
+
+'hola gente!!' copyFrom: 'hola' size + 1 to: 10.!
+
+'hola gente!!' copyFrom: 'hola' size + 1 to: 9.!
+
+6+2*5.!
+
+(6+2)*5.!
+
+ObjectBuilder create: #AlanKay asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo33'!
+
+!classDefinition: #AlanKay category: 'Algo33' stamp: 'SL 3/31/2022 20:59:31'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo33'!
+
+!classDefinition: 'AlanKay class' category: 'Algo33' stamp: 'SL 3/31/2022 20:59:31'!
+AlanKay class
+	instanceVariableNames: ''!
+
+AlanKay
+	collaboratorNames: 'currentCompany'
+	in: 'Algo33'!
+
+!classDefinition: #AlanKay category: 'Algo33' stamp: 'SL 3/31/2022 21:00:05'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo33'!
+
+!classDefinition: 'AlanKay class' category: 'Algo33' stamp: 'SL 3/31/2022 21:00:06'!
+AlanKay class
+	instanceVariableNames: 'currentCompany'!
+
+----STARTUP---- (31 March 2022 21:10:31) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #AlanKay asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #AlanKay category: 'Algo3' stamp: 'SL 3/31/2022 21:11:01'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'AlanKay class' category: 'Algo3' stamp: 'SL 3/31/2022 21:11:01'!
+AlanKay class
+	instanceVariableNames: ''!
+
+AlanKay
+	collaboratorNames: 'currentCompany'
+	in: 'Algo3'!
+
+!classDefinition: #AlanKay category: 'Algo3' stamp: 'SL 3/31/2022 21:11:14'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'AlanKay class' category: 'Algo3' stamp: 'SL 3/31/2022 21:11:14'!
+AlanKay class
+	instanceVariableNames: 'currentCompany'!
+!AlanKay class methodsFor: 'no messages' stamp: 'SL 3/31/2022 21:13:42'!
+currentCompany
+	^currentCompany! !
+
+currentCompany!
+
+----QUIT----(31 March 2022 21:15:54) CuisUniversity-5093.image priorSource: 4549442!
+
+----STARTUP---- (31 March 2022 21:18:33) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+currentCompany!
+
+currentCompany!
+
+AlanKay currentCompany!
+
+currentCompany!
+
+AlanKay currentCompany!
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'SL 3/31/2022 21:27:27'!
+dateOfBirth
+	^November/11/1997! !
+
+----QUIT----(31 March 2022 21:27:56) CuisUniversity-5093.image priorSource: 4550611!
+
+----STARTUP---- (6 April 2022 23:15:37) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #Car asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #Car category: 'Algo3' stamp: 'SL 4/6/2022 23:17:10'!
+DenotativeObject subclass: #Car
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'Car class' category: 'Algo3' stamp: 'SL 4/6/2022 23:17:10'!
+Car class
+	instanceVariableNames: ''!
+!Car class methodsFor: 'nil' stamp: 'SL 4/6/2022 23:17:36'!
+turnOff! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:17:47'!
+speedUp! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:17:52' overrides: 16901488!
+break! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:18:03'!
+openTrunk! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:18:13'!
+asHtml! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:18:17'!
+save! !
+!Car class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:18:20'!
+asJson! !
+
+ObjectBuilder create: #AlanTuring asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #AlanTuring category: 'Algo3' stamp: 'SL 4/6/2022 23:18:43'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'AlanTuring class' category: 'Algo3' stamp: 'SL 4/6/2022 23:18:43'!
+AlanTuring class
+	instanceVariableNames: ''!
+
+AlanTuring dateOfBirth.!
+
+AlanTuring dateOfBirth.!
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 4/6/2022 23:21:25'!
+dateOfBirth
+	self shouldBeImplemented.! !
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 4/6/2022 23:22:03' prior: 50473926!
+dateOfBirth
+	^June/23/1912! !
+
+ObjectBuilder create: #JohnVonNeumann asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #JohnVonNeumann category: 'Algo3' stamp: 'SL 4/6/2022 23:22:27'!
+DenotativeObject subclass: #JohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'JohnVonNeumann class' category: 'Algo3' stamp: 'SL 4/6/2022 23:22:27'!
+JohnVonNeumann class
+	instanceVariableNames: ''!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'SL 4/6/2022 23:22:57'!
+dateOfBirth
+	^December/28/1903! !
+
+JohnVonNeumann dateofBirth inspect!
+
+JohnVonNeumann dateofBirth inspect.!
+
+JohnVonNeumann dateofBirth inspect.!
+
+JohnVonNeumann dateofBirth inspect.!
+
+JohnVonNeumann dateOfBirth inspect.!
+
+JohnVonNeumann dateOfBirth inspect.!
+
+JohnVonNeumann dateOfBirth inspect.!
+
+JohnVonNeumann dateOfBirth inspect.!
+
+ObjectBuilder create: #AdeleGoldberg asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #AdeleGoldberg category: 'Algo3' stamp: 'SL 4/6/2022 23:26:19'!
+DenotativeObject subclass: #AdeleGoldberg
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'AdeleGoldberg class' category: 'Algo3' stamp: 'SL 4/6/2022 23:26:19'!
+AdeleGoldberg class
+	instanceVariableNames: ''!
+!AdeleGoldberg class methodsFor: 'nil' stamp: 'SL 4/6/2022 23:26:47'!
+dateOfBirth
+	^July/22/1945! !
+
+JohnVonNeumann currentCompany.!
+
+JohnVonNeumann currentCompany!
+
+JohnVonNeumann currentCompany.!
+
+	^currentCompany!
+
+AlanKay currentCompany.!
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:33:08' prior: 50473866!
+dateOfBirth
+	! !
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:33:33' prior: 50473985!
+dateOfBirth
+	| aLongTimeAgo |
+	aLongTimeAgo := May/17/1940
+	^aLongTimeAgo! !
+
+AlanKay dateOfBirth.!
+!AlanTuring class methodsFor: 'nil' stamp: 'SL 4/6/2022 23:40:52'!
+isOlderThan: aPerson
+	| ageDifference |
+	ageDifference := self dateOfBirth distanceTo: aPerson dateOfBirth.
+	^ageDifference positive! !
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'SL 4/6/2022 23:42:29' prior: 50473989!
+dateOfBirth
+	| aLongTimeAgo |
+	aLongTimeAgo := May/17/1940.
+	^aLongTimeAgo! !
+!Car class methodsFor: 'nil' stamp: 'SL 4/6/2022 23:44:58'!
+dateOfBirth
+	^January/1/1769.! !
+
+----SNAPSHOT----(6 April 2022 23:47:45) CuisUniversity-5093.image priorSource: 4551009!
+
+----QUIT----(6 April 2022 23:47:57) CuisUniversity-5093.image priorSource: 4555552!
+
+----STARTUP---- (6 April 2022 23:48:01) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+10 factorial.!
+
+[10 factorial ].!
+
+[10 factorial ] value.!
+
+[ :anInterger | anInterger factorial ] value: 10.!
+
+[ :anInterger | anInterger factorial ] value: 100.!
+
+factorialBlock := [ :anInterger | anInterger factorial ].!
+
+factorialSumBlock value: 10 value: 20.!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].!
+
+factorialSumBlock value: 10 value: 20.!
+
+factorialSumBlock valueWithArguments: #(10 20)!
+
+plusTenByTwentyBlock value: 5.!
+
+plusTenByTwentyBlock value: 5.!
+
+plusTenByTwentyBlock value: 5.!
+
+plusTenByTwentyBlock value: 5.!
+
+plusTenByTwentyBlock value: 100.!
+
+sum := 0.
+5 timesRepeat: [ sum := sum + 10].
+sum.!
+
+5 timesRepeat: [ sum := sum + 10].!
+
+sum.!
+
+sum.!
+
+sum.!
+
+sum.!
+
+sum. !
+
+sum := 0.
+5 timesRepeat: [ sum := sum + 10].
+sum.!
+
+sum := 0.
+[ sum < 50] whileTrue: [ sum := sum + 10].
+sum.!
+
+10 > 5 ifTrue: ['Si!! 10 es mayor que cinco'] ifFalse: ['No, no lo es.']!
+
+10 > 15 ifTrue: ['Si!! 10 es mayor que cinco'] ifFalse: ['No, no lo es.']!
+
+sum := 0.
+#(1 2 3 4 5) do: [ :anInterger | sum := sum + anInterger].
+sum!
+
+sum.!
+
+#(1 2 3 4 5) inject: 0 into: [ :acum :anInterger | acum + anInterger]!
+
+----STARTUP---- (7 April 2022 19:10:50) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #HabitatAvispas asChildOf: DenotativeObject collaboratorNames: '' in: 'Habitat'!
+
+!classDefinition: #HabitatAvispas category: 'Habitat' stamp: 'SL 4/7/2022 19:11:42'!
+DenotativeObject subclass: #HabitatAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Habitat'!
+
+!classDefinition: 'HabitatAvispas class' category: 'Habitat' stamp: 'SL 4/7/2022 19:11:42'!
+HabitatAvispas class
+	instanceVariableNames: ''!
+
+!classDefinition: #HabitatDeAvispas category: 'Workspace-Objects' stamp: 'SL 4/7/2022 19:13:13'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+HabitatAvispas!
+
+"Cuando empieza el año con una cantidad de avispas, ésta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+
+----STARTUP---- (7 April 2022 19:15:19) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #HabitatDeAvispas asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #HabitatDeAvispas category: 'Algo3' stamp: 'SL 4/7/2022 19:15:39'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Algo3' stamp: 'SL 4/7/2022 19:15:39'!
+HabitatDeAvispas class
+	instanceVariableNames: ''!
+
+"Cuando empieza el año con una cantidad de avispas, ésta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+!HabitatDeAvispas class methodsFor: 'Categoria' stamp: 'SL 4/7/2022 19:16:19'!
+cantidadDeAvispasVivas: aSmallInteger 
+	self shouldBeImplemented.! !
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Algo3' stamp: 'SL 4/7/2022 19:16:52'!
+HabitatDeAvispas class
+	instanceVariableNames: 'cantidadDeAvispasVivas'!
+!HabitatDeAvispas class methodsFor: 'Categoria' stamp: 'SL 4/7/2022 19:16:42' prior: 50474041!
+cantidadDeAvispasVivas: aSmallInteger 
+	^cantidadDeAvispasVivas.! !
+
+"Cuando empieza el año con una cantidad de avispas, ésta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+!HabitatDeAvispas class methodsFor: 'Categoria' stamp: 'SL 4/7/2022 19:17:10'!
+cantidadDeAvispasVivas
+	self shouldBeImplemented.
+	^cantidadDeAvispasVivas! !
+!HabitatDeAvispas class methodsFor: 'Categoria' stamp: 'SL 4/7/2022 19:17:17' prior: 50474063!
+cantidadDeAvispasVivas
+	^cantidadDeAvispasVivas.! !
+
+"Cuando empieza el año con una cantidad de avispas, ésta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+
+AlanTuring hola.!
+!AlanTuring class methodsFor: 'personal info' stamp: 'SL 4/7/2022 19:47:10' overrides: 50447937!
+doesNotUnderstand: aMessage
+	^'No entiendo lo que me decís con', aMessage asString! !
+
+AlanTuring hola.!
+!AlanTuring class methodsFor: 'public' stamp: 'SL 4/7/2022 19:47:56' prior: 50474081 overrides: 50447937!
+doesNotUnderstand: aMessage
+	^'No entiendo lo que me decís con ', aMessage asString! !
+!AlanTuring class methodsFor: 'public' stamp: 'SL 4/7/2022 19:48:42' prior: 50474088 overrides: 50447937!
+doesNotUnderstand: aMessage
+	^'No entiendo lo que me decís con ', aMessage asString! !
+
+AlanTuring chau.!
+
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: #CloneOfJohnVonNeumann category: 'Algo3' stamp: 'SL 4/7/2022 20:20:01'!
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+
+!classDefinition: 'CloneOfJohnVonNeumann class' category: 'Algo3' stamp: 'SL 4/7/2022 20:20:01'!
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+!CloneOfJohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'SL 4/7/2022 20:20:01'!
+dateOfBirth
+	^December/28/1903! !
+
+(June/23/2019) = (June/23/2019).!
+
+(June/23/2019) == (June/23/2019).!
+
+AlanTuring = AlanTuring.!
+
+AlanTuring == AlanTuring.!
+
+JohnVonNeumann = CloneOfJohnVonNeumann.!
+
+JohnVonNeumann == CloneOfJohnVonNeumann.!
+
+100 factorial = 100 factorial.!
+
+100 factorial == 100 factorial.!
+
+#('ho','la') = ('ho','la'). !
+
+('ho','la') = ('ho','la'). !
+
+('ho','la') = ('hola'). !
+
+('ho','la') == ('ho','la'). !
+
+('ho','la') == ('hola'). !
+
+('ho','la') = ('hola'). !
+!JohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'SL 4/7/2022 20:55:48'!
+m1: collaborator1
+
+	| temp1 |
+	
+	^thisContext! !
+!JohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'SL 4/7/2022 20:57:10' prior: 50474138!
+m1: collaborator1
+	| temp1 |
+	^thisContext! !
+
+self tempsAndValues.!
+
+self tempAt: 1.!
+
+self tempAt: 2.!
+
+self tempAt: 3.!
+
+self tempAt: 3.!
+
+self tempAt: 2.!
+
+self tempAt: 2 put:20.!
+
+self tempAt: 2.!
+
+AlanTuring isOlderThan: AlanKay!
+
+AlanTuring isOlderThan: JohnVonNeumann!
+
+list size.!
+
+self setSelectionIndex: 1!
+
+self setSelectionIndex: 3!
+
+self setSelectionIndex: #fail!
+
+self setSelectionIndex: 1!
+
+self setSelectionIndex: 3!
+
+self setSelectionIndex: #fail!
+
+self setSelectionIndex: 5!
+
+self setSelectionIndex: 4!
+
+self setSelectionIndex: 30!
+
+self send.!
+
+self send.
+self send.
+self send.
+self send.
+!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+self send.!
+
+----STARTUP---- (8 April 2022 13:28:56) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+!classDefinition: #HabitatDeAvispas category: 'Workspace-Objects' stamp: 'SL 4/8/2022 13:35:41'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+"Cuando empieza el año con una cantidad de avispas, esta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+
+HabitatDeAvispas!
+
+!classRemoval: #HabitatDeAvispas stamp: 'SL 4/8/2022 13:39:03'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+ObjectBuilder create: #HabitatDeAvispas asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #HabitatDeAvispas category: 'Algo3' stamp: 'SL 4/8/2022 13:39:15'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Algo3' stamp: 'SL 4/8/2022 13:39:15'!
+HabitatDeAvispas class
+	instanceVariableNames: ''!
+
+!classDefinition: #CantidadDeAvispasVivas category: 'Algo3' stamp: 'SL 4/8/2022 13:40:09'!
+DenotativeObject subclass: #CantidadDeAvispasVivas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+!HabitatDeAvispas class methodsFor: 'no messages' stamp: 'SL 4/8/2022 13:40:02'!
+CantidadDeAvispasVivas
+	^CantidadDeAvispasVivas! !
+!HabitatDeAvispas class methodsFor: 'nil' stamp: 'SL 4/8/2022 13:41:03'!
+CantidadDeAvispasVivas: aNumber
+	CantidadDeAvispasVivas = aNumber! !
+
+Assert that: HabitatDeAvispas CantidadDeAvispasVivas isEqualTo: 8.!
+
+"1"
+HabitatDeAvispas CantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas CantidadDeAvispasVivas isEqualTo: 8.!
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:45:22' prior: 50474064!
+CantidadDeAvispasVivas
+	^0! !
+
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+
+"Cuando empieza el año con una cantidad de avispas, esta no cambia durante el año"
+HabitatDeAvispas CantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas CantidadDeAvispasVivas isEqualTo: 8.!
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:46:06'!
+cantidadDeAvispasVivas: aNumber
+	CantidadDeAvispasVivas = aNumber! !
+
+!methodRemoval: HabitatDeAvispas class #CantidadDeAvispasVivas: stamp: 'SL 4/8/2022 13:46:06'!
+CantidadDeAvispasVivas: aNumber
+	CantidadDeAvispasVivas = aNumber!
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:46:18'!
+cantidadDeAvispasVivas
+	^0! !
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:46:18' prior: 50474092!
+cantidadDeAvispasVivas: aNumber
+	CantidadDeAvispasVivas = aNumber! !
+
+!methodRemoval: HabitatDeAvispas class #CantidadDeAvispasVivas stamp: 'SL 4/8/2022 13:46:18'!
+CantidadDeAvispasVivas
+	^0!
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:46:34' prior: 50474108!
+cantidadDeAvispasVivas: aNumber
+	| cantidadDeAvispasVivas |
+	cantidadDeAvispasVivas = aNumber! !
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:46:48' prior: 50474118!
+cantidadDeAvispasVivas: aNumber
+	CantidadDeAvispasVivas = aNumber! !
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:48:04' prior: 50474125!
+cantidadDeAvispasVivas: aNumber! !
+
+!classRemoval: #CantidadDeAvispasVivas stamp: 'SL 4/8/2022 13:48:12'!
+DenotativeObject subclass: #CantidadDeAvispasVivas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+!HabitatDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/8/2022 13:50:07' prior: 50474131!
+cantidadDeAvispasVivas: aNumber
+	HabitatDeAvispas cantidadDeAvispasVivas = aNumber! !
+
+"Cuando empieza el año con una cantidad de avispas, esta no cambia durante el año"
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 8.!
+
+----STARTUP---- (19 April 2022 18:44:58) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #HabitatDeAvispas asChildOf: DenotativeObject collaboratorNames: '' in: 'Habitats'!
+
+!classDefinition: #HabitatDeAvispas category: 'Habitats' stamp: 'SL 4/19/2022 18:46:30'!
+DenotativeObject subclass: #HabitatDeAvispas
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Habitats'!
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Habitats' stamp: 'SL 4/19/2022 18:46:30'!
+HabitatDeAvispas class
+	instanceVariableNames: ''!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDEAvispasVivas.
+"Debería devolver 8."!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDEAvispasVivas.
+"Debería devolver 8."!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeAvispasVivas.
+"Debería devolver 8."!
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 18:52:30'!
+cantidadDeAvispasVivas: aSmallInteger 
+	self shouldBeImplemented.! !
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Habitats' stamp: 'SL 4/19/2022 18:55:27'!
+HabitatDeAvispas class
+	instanceVariableNames: 'cantidadDeAvispasVivas'!
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 18:54:32' prior: 50474046!
+cantidadDeAvispasVivas: unaCantidadDeAvispasVivas
+	cantidadDeAvispasVivas := unaCantidadDeAvispasVivas.! !
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 18:57:47'!
+cantidadDeAvispasVivas
+	self shouldBeImplemented.
+	^cantidadDeAvispasVivas! !
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 18:58:21' prior: 50474063!
+cantidadDeAvispasVivas
+	^cantidadDeAvispasVivas! !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas cantidadDeAvispasVivas.!
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 19:09:46'!
+avanzarUnAño
+	cantidadDeAvispasVivas := 0! !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas cantidadDeAvispasVivas.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas cantidadDeAvispasVivas. !
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 19:11:54'!
+cantidadDeHuevosPuestos: aSmallInteger 
+	self shouldBeImplemented.! !
+
+!classDefinition: 'HabitatDeAvispas class' category: 'Habitats' stamp: 'SL 4/19/2022 19:12:19'!
+HabitatDeAvispas class
+	instanceVariableNames: 'cantidadDeAvispasVivas cantidadDeHuevos'!
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 19:12:16' prior: 50474090!
+cantidadDeHuevosPuestos: aSmallInteger 
+	cantidadDeHuevos := aSmallInteger ! !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas cantidadDeAvispasVivas. !
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 19:13:22' prior: 50474077!
+avanzarUnAño
+	cantidadDeAvispasVivas := cantidadDeHuevos ! !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas cantidadDeAvispasVivas. !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 3.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 3.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 1.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 1.!
+!HabitatDeAvispas class methodsFor: 'public' stamp: 'SL 4/19/2022 19:20:55' prior: 50474112!
+avanzarUnAño
+	cantidadDeAvispasVivas := cantidadDeHuevos.
+	cantidadDeHuevos := 0.! !
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 0.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 0.!
+
+HabitatDeAvispas cantidadDeAvispasVivas: 8.
+HabitatDeAvispas cantidadDeHuevosPuestos: 3.
+HabitatDeAvispas avanzarUnAño.
+HabitatDeAvispas avanzarUnAño.
+Assert that: HabitatDeAvispas cantidadDeAvispasVivas isEqualTo: 1.!
+
+----SNAPSHOT----(19 April 2022 19:23:53) CuisUniversity-5093.image priorSource: 4555641!
+
+ObjectBuilder create: #Semaforo asChildOf: DenotativeObject collaboratorNames: '' in: 'Algo3'!
+
+!classDefinition: #Semaforo category: 'Algo3' stamp: 'SL 4/19/2022 21:00:17'!
+DenotativeObject subclass: #Semaforo
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'Semaforo class' category: 'Algo3' stamp: 'SL 4/19/2022 21:00:17'!
+Semaforo class
+	instanceVariableNames: ''!
+
+Semaforo
+	collaboratorNames: 'luzActual'
+	in: 'Algo3'!
+
+!classDefinition: #Semaforo category: 'Algo3' stamp: 'SL 4/19/2022 21:01:22'!
+DenotativeObject subclass: #Semaforo
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+!classDefinition: 'Semaforo class' category: 'Algo3' stamp: 'SL 4/19/2022 21:01:22'!
+Semaforo class
+	instanceVariableNames: 'luzActual'!
+!Semaforo class methodsFor: 'no messages' stamp: 'SL 4/19/2022 21:02:09'!
+verLuzActual
+	^luzActual ! !
+
+!classRemoval: #Semaforo stamp: 'SL 4/19/2022 21:24:47'!
+DenotativeObject subclass: #Semaforo
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Algo3'!
+
+----QUIT----(21 April 2022 12:00:04) CuisUniversity-5093.image priorSource: 4560680!
+
+----STARTUP---- (21 April 2022 18:59:32) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /home/lambda/Cuis/Semaforo-v1.st----!
+
+----QUIT----(21 April 2022 19:17:28) CuisUniversity-5093.image priorSource: 4561912!
+
+----STARTUP---- (21 April 2022 19:18:44) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /home/lambda/Cuis/Ejercicio1-Avispas-y-Abejas-Episodio2.CodigoInicial.st----!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:22:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:22:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:22:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:22:40'!
+ERROR!
+
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:23:35'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:23:35'!
+ERROR!
+
+ObjectBuilder create: #habitat asChildOf: DenotativeObject collaboratorNames: '' in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #habitat category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:24:25'!
+DenotativeObject subclass: #habitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'habitat class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:24:25'!
+habitat class
+	instanceVariableNames: ''!
+
+habitat
+	collaboratorNames: 'cantidadDeHuevosDeAvispas'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #habitat category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:24:47'!
+DenotativeObject subclass: #habitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'habitat class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:24:47'!
+habitat class
+	instanceVariableNames: 'cantidadDeHuevosDeAvispas'!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:25:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:25:05'!
+ERROR!
+
+!classRemoval: #habitat stamp: 'SL 4/21/2022 19:26:01'!
+DenotativeObject subclass: #habitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:49:39'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:49:39'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:51:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:51:23'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 19:53:22' prior: 50475172!
+habitat
+	"Completar"! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:54:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:54:47'!
+ERROR!
+
+ObjectBuilder create: #habitatA asChildOf: DenotativeObject collaboratorNames: '' in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #habitatA category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:56:55'!
+DenotativeObject subclass: #habitatA
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'habitatA class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 19:56:55'!
+habitatA class
+	instanceVariableNames: ''!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:57:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:57:12'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 19:57:45'!
+cantidadDeHuevosDeAvispas
+	self shouldBeImplemented.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 19:58:19' prior: 50475325!
+habitat
+	^habitatA ! !
+!habitatA class methodsFor: 'no messages' stamp: 'SL 4/21/2022 19:59:05'!
+cantidadDeHuevosDeAvispas
+	^0! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 19:59:12'!
+PASSED!
+
+!classRenamed: #habitatA as: #HabitatA stamp: 'SL 4/21/2022 20:00:27'!
+Smalltalk renameClassNamed: #habitatA as: #HabitatA!
+!PruebasReproduccionDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:00:27' prior: 50475362!
+habitat
+	^HabitatA ! !
+
+ObjectBuilder create: #AvispaOriana asChildOf: DenotativeObject collaboratorNames: '' in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #AvispaOriana category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:02:20'!
+DenotativeObject subclass: #AvispaOriana
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'AvispaOriana class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:02:20'!
+AvispaOriana class
+	instanceVariableNames: ''!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:02:41' prior: 50475192!
+laAvispaOriana
+	^AvispaOriana! !
+!AvispaOriana class methodsFor: 'no messages' stamp: 'SL 4/21/2022 20:04:10'!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas = 1! !
+
+HabitatA
+	collaboratorNames: 'nroDeHuevosDeAvispas'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #HabitatA category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:05:40'!
+DenotativeObject subclass: #HabitatA
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'HabitatA class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:05:40'!
+HabitatA class
+	instanceVariableNames: 'nroDeHuevosDeAvispas'!
+
+HabitatA
+	collaboratorNames: ''
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #HabitatA category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:06:16'!
+DenotativeObject subclass: #HabitatA
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'HabitatA class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:06:16'!
+HabitatA class
+	instanceVariableNames: ''!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:06:38'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:06:38'!
+ERROR!
+
+!classDefinition: 'HabitatA class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:08:44'!
+HabitatA class
+	instanceVariableNames: 'cantidadDeHuevosDeAvispas'!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:08:42'!
+cantidadDeHuevosDeAvispas: nuevoNumero
+	cantidadDeHuevosDeAvispas := nuevoNumero! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:11:28' prior: 50475403!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas  : 1! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:11:30' prior: 50475454!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas : 1! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:11:31' prior: 50475460!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas: 1! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:11:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:11:47'!
+ERROR!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:12:20' prior: 50475366!
+cantidadDeHuevosDeAvispas
+	^1! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:12:31'!
+ERROR!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:13:01' prior: 50475477!
+cantidadDeHuevosDeAvispas
+	^cantidadDeHuevosDeAvispas ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:13:13'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:14:16' prior: 50475242!
+retrocederElHabitatAlInicioDeLosTiempos
+	HabitatA retrocederAlInicioDeLosTiempos! !
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:15:12'!
+retrocederHabitatAlIicioDeLosTiempos
+	^cantidadDeHuevosDeAvispas := 0! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:15:21'!
+ERROR!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:15:58'!
+retrocederElHabitatAlInicioDeLosTiempos
+	^cantidadDeHuevosDeAvispas := 0! !
+
+!methodRemoval: HabitatA class #retrocederHabitatAlIicioDeLosTiempos stamp: 'SL 4/21/2022 20:15:58'!
+retrocederHabitatAlIicioDeLosTiempos
+	^cantidadDeHuevosDeAvispas := 0!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:05'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:16:25' prior: 50475522!
+retrocederElHabitatAlInicioDeLosTiempos
+	HabitatA retrocederAlInicioDeLosTiempos.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:16:31' prior: 50475580!
+retrocederElHabitatAlInicioDeLosTiempos
+	HabitatA retrocederElHabitatAlInicioDeLosTiempos.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:16:41'!
+ERROR!
+
+cantidadDeHuevosDeAvispas!
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:18:41' prior: 50475466!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas: HabitatA cantidadDeHuevosDeAvispas + 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:18:48'!
+ERROR!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:20:05'!
+cantidadDeOrugas
+	^0! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:20:34'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:22:05'!
+cantidadDeOrugas
+	HabitatA cantidadDeOrugas ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:22:14'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:23:03' prior: 50475664!
+cantidadDeOrugas
+	^HabitatA cantidadDeOrugas ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:23:14'!
+ERROR!
+
+!methodRemoval: PruebasReproduccionDeAvispas class #cantidadDeHuevosDeAvispas stamp: 'SL 4/21/2022 20:24:08'!
+cantidadDeHuevosDeAvispas
+	self shouldBeImplemented.!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:24:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:25:10'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:26:04' prior: 50475228!
+queElHabitatTengaUnaOrugaMas
+	HabitatA sumarUnaOruga.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:09'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:21'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:26:34'!
+ERROR!
+
+!classDefinition: 'HabitatA class' category: 'AvispasYAbejasParte2' stamp: 'SL 4/21/2022 20:29:16'!
+HabitatA class
+	instanceVariableNames: 'cantidadDeHuevosDeAvispas numeroDeOrugas'!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:29:12'!
+sumarUnaOruga
+	numeroDeOrugas := 1! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:29:25'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'SL 4/21/2022 20:30:44' prior: 50475213!
+queElHabitatTengaDosOrugasMas
+	HabitatA sumarUnaOruga.
+	HabitatA sumarUnaOruga.! !
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:31:00' prior: 50475636!
+cantidadDeOrugas
+	^numeroDeOrugas ! !
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:31:19' prior: 50475816!
+sumarUnaOruga
+	numeroDeOrugas := numeroDeOrugas + 1! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:31:29'!
+ERROR!
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:32:07' prior: 50475551!
+retrocederElHabitatAlInicioDeLosTiempos
+	cantidadDeHuevosDeAvispas := 0.
+	numeroDeOrugas := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:14'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:32:24'!
+ERROR!
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:33:49' prior: 50475612!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas: HabitatA cantidadDeHuevosDeAvispas + 1.
+	HabitatA cantidadDeOrugas: HabitatA cantidadDeOrugas - 1.! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:34:28' prior: 50475900!
+intentarReproducirse
+	HabitatA cantidadDeHuevosDeAvispas: HabitatA cantidadDeHuevosDeAvispas + 1.
+	HabitatA cantidadDeOrugas: HabitatA cantidadDeOrugas - 1.! !
+!HabitatA class methodsFor: 'as yet unclassified' stamp: 'SL 4/21/2022 20:35:21' prior: 50475845!
+cantidadDeOrugas
+	^numeroDeOrugas ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'SL 4/21/2022 20:35:28'!
+ERROR!
+
+----QUIT----(21 April 2022 20:49:21) CuisUniversity-5093.image priorSource: 4582387!
+
+----STARTUP---- (2 May 2022 15:41:27) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /home/lambda/Cuis/SolucionEj2/v1.0/CodigoRepetido-Ejercicio-Modificado.st----!
+
+!testRun: #CustomerBookTest #test01AddingCustomerShouldNotTakeMoreThan50Milliseconds stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test02RemovingCustomerShouldNotTakeMoreThan100Milliseconds stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test03CanNotAddACustomerWithEmptyName stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test04CanNotRemoveAnInvalidCustomer stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test05SuspendingACustomerShouldNotRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test06RemovingASuspendedCustomerShouldRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test07CanNotSuspendAnInvalidCustomer stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test08CanNotSuspendAnAlreadySuspendedCustomer stamp: 'SL 5/2/2022 15:42:03'!
+PASSED!
+
+!testRun: #CustomerBookTest #test01AddingCustomerShouldNotTakeMoreThan50Milliseconds stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test02RemovingCustomerShouldNotTakeMoreThan100Milliseconds stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test03CanNotAddACustomerWithEmptyName stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test04CanNotRemoveAnInvalidCustomer stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test05SuspendingACustomerShouldNotRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test06RemovingASuspendedCustomerShouldRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test07CanNotSuspendAnInvalidCustomer stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+
+!testRun: #CustomerBookTest #test08CanNotSuspendAnAlreadySuspendedCustomer stamp: 'SL 5/2/2022 15:42:06'!
+PASSED!
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'SL 5/2/2022 15:46:16'!
+assertQue: unCliente esUnicoClienteEn: customerBook
+	^ [
+		self assert: customerBook numberOfCustomers = 1.
+		self assert: (customerBook includesCustomerNamed: unCliente)
+	]! !
+
+!methodRemoval: CustomerBookTest #assertQue:esUnicoCostumerEn: stamp: 'SL 5/2/2022 15:46:29'!
+assertQue: unCliente esUnicoCostumerEn: customerBook
+	^ [
+		self assert: customerBook numberOfCustomers = 1.
+		self assert: (customerBook includesCustomerNamed: unCliente)
+	]!
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:46:45' prior: 50476018!
+test04CanNotRemoveAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook removeCustomerNamed: 'Paul McCartney'] TieneElTipoDeError: NotFound Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:46:55' prior: 50476064!
+test07CanNotSuspendAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook suspendCustomerNamed: 'Ringo Starr'.] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:47:01' prior: 50476078!
+test08CanNotSuspendAnAlreadySuspendedCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	self AgregarYSuspenderA: johnLennon En: customerBook.
+
+	self AssertQueSiLaOperacion: [ customerBook suspendCustomerNamed: johnLennon. ] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+
+!testRun: #CustomerBookTest #test01AddingCustomerShouldNotTakeMoreThan50Milliseconds stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test02RemovingCustomerShouldNotTakeMoreThan100Milliseconds stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test03CanNotAddACustomerWithEmptyName stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test04CanNotRemoveAnInvalidCustomer stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test05SuspendingACustomerShouldNotRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test06RemovingASuspendedCustomerShouldRemoveItFromCustomerBook stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test07CanNotSuspendAnInvalidCustomer stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+!testRun: #CustomerBookTest #test08CanNotSuspendAnAlreadySuspendedCustomer stamp: 'SL 5/2/2022 15:47:09'!
+PASSED!
+
+----STARTUP---- (5 May 2022 19:20:07) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/03-Numeros/Numeros-Parte2-Ejercicio.st----!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 19:21:42'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 19:21:42'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 19:21:42'!
+ERROR!
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 19:27:49' prior: 50476777 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: value * anAdder denominator + anAdder numerator over: anAdder denominator.
+		"^self class with: value + anAdder integerValue"
+		]! !
+
+Fraccion new with:8 over:10.!
+
+| Hola |!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 19:31:16'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 19:31:16'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 19:31:16'!
+ERROR!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:31:29'!
+ERROR!
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 19:33:50' prior: 50477149 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: value * (anAdder denominator) + (anAdder numerator) over: (anAdder denominator).
+		"^self class with: value + anAdder integerValue"
+		]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 19:33:59'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 19:33:59'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 19:33:59'!
+ERROR!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:34:03'!
+ERROR!
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 19:39:05' prior: 50477301 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: value * ((anAdder denominator) value) + (anAdder numerator) over: (anAdder denominator).
+		"^self class with: value + anAdder integerValue"
+		]! !
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 19:39:13' prior: 50477452 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: value * ((anAdder denominator) value) + ((anAdder numerator) value) over: (anAdder denominator).
+		"^self class with: value + anAdder integerValue"
+		]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 19:39:15'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 19:39:15'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 19:39:15'!
+ERROR!
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 19:39:47' prior: 50477465 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: value * (anAdder denominator value) + (anAdder numerator value) over: (anAdder denominator).
+		"^self class with: value + anAdder integerValue"
+		]! !
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:00:00' prior: 50477613 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	
+	(anAdder isKindOf: Fraccion ) ifTrue: [
+		^Fraccion with: self value * (anAdder denominator value) + (anAdder numerator value) over: (anAdder denominator).
+		"^self class with: value + anAdder integerValue"
+		]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:00:02'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:00:02'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:00:02'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:03:07'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:03:07'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:03:07'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:04:13'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:04:13'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:04:13'!
+ERROR!
+
+!classRemoval: #Fraccion stamp: 'SL 5/5/2022 20:06:40'!
+Numero subclass: #Fraccion
+	instanceVariableNames: 'numerator denominator'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numeros-Parte2-Ejercicio'!
+
+!classRemoval: #Entero stamp: 'SL 5/5/2022 20:06:41'!
+Numero subclass: #Entero
+	instanceVariableNames: 'value'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numeros-Parte2-Ejercicio'!
+
+!classRemoval: #Numero stamp: 'SL 5/5/2022 20:06:41'!
+Object subclass: #Numero
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numeros-Parte2-Ejercicio'!
+
+!classRemoval: #NumeroTest stamp: 'SL 5/5/2022 20:06:42'!
+TestCase subclass: #NumeroTest
+	instanceVariableNames: 'zero one two four oneFifth oneHalf five twoFifth twoTwentyfifth fiveHalfs three eight negativeOne negativeTwo'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Numeros-Parte2-Ejercicio'!
+
+----STARTUP---- (5 May 2022 20:10:08) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+!classDefinition: #CantSuspend category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Error subclass: #CantSuspend
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #CantSuspend category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Error subclass: #CantSuspend
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #NotFound category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Error subclass: #NotFound
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #NotFound category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Error subclass: #NotFound
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #CustomerBookTest category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+TestCase subclass: #CustomerBookTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #CustomerBookTest category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+TestCase subclass: #CustomerBookTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:49:11'!
+test01AddingCustomerShouldNotTakeMoreThan50Milliseconds
+
+	| customerBook |
+	
+	customerBook := CustomerBook new.
+	
+	self assertEjecutarLaOperacion: [customerBook addCustomerNamed: 'John Lennon'.] enMenosDe: 50.
+	
+
+	
+! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:49:41'!
+test02RemovingCustomerShouldNotTakeMoreThan100Milliseconds
+
+	| customerBook paulMcCartney |
+	
+	customerBook := CustomerBook new.
+	
+	paulMcCartney := 'Paul McCartney'.
+	customerBook addCustomerNamed: paulMcCartney.
+	
+	self assertEjecutarLaOperacion: [customerBook removeCustomerNamed: paulMcCartney.] enMenosDe: 100.
+
+! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:09:49'!
+test03CanNotAddACustomerWithEmptyName 
+
+	| customerBook |
+			
+	customerBook := CustomerBook new.
+	
+	self AssertQueSiLaOperacion: [customerBook addCustomerNamed: ''.] TieneElTipoDeError: Error Hacer: [
+		:anError | 
+			self assert: anError messageText = CustomerBook customerCanNotBeEmptyErrorMessage.
+			self assert: customerBook isEmpty
+		]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:09:58'!
+test04CanNotRemoveAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook removeCustomerNamed: 'Paul McCartney'] TieneElTipoDeError: NotFound Hacer: [
+		self assertQue: johnLennon esUnicoCostumerEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:51:36'!
+test05SuspendingACustomerShouldNotRemoveItFromCustomerBook
+
+	| customerBook paulMcCartney|
+	
+	customerBook := CustomerBook new.
+	paulMcCartney := 'Paul McCartney'.
+	
+	self AgregarYSuspenderA: paulMcCartney En: customerBook.
+	self assertQueEn: customerBook clientesTotalesSon: 1 clientesActivosSon: 0 clientesSuspendidosSon: 1.
+	self assert: (customerBook includesCustomerNamed: paulMcCartney).
+	
+
+	
+! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:51:45'!
+test06RemovingASuspendedCustomerShouldRemoveItFromCustomerBook
+
+	| customerBook paulMcCartney|
+	
+	customerBook := CustomerBook new.
+	paulMcCartney := 'Paul McCartney'.
+	
+	self AgregarYSuspenderA: paulMcCartney En: customerBook.
+	customerBook removeCustomerNamed: paulMcCartney.
+	
+	self assertQueEn: customerBook clientesTotalesSon: 0 clientesActivosSon: 0 clientesSuspendidosSon: 0.
+	self deny: (customerBook includesCustomerNamed: paulMcCartney).
+
+
+	
+! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:10:08'!
+test07CanNotSuspendAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook suspendCustomerNamed: 'Ringo Starr'.] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoCostumerEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'MAM 5/2/2022 12:46:57'!
+test08CanNotSuspendAnAlreadySuspendedCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	self AgregarYSuspenderA: johnLennon En: customerBook.
+
+	self AssertQueSiLaOperacion: [ customerBook suspendCustomerNamed: johnLennon. ] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoCostumerEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'MAM 5/2/2022 12:50:20'!
+AgregarYSuspenderA: unCliente En: customerBook
+	customerBook addCustomerNamed: unCliente.
+	customerBook suspendCustomerNamed: unCliente.! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'MAM 5/2/2022 12:50:37'!
+AssertQueSiLaOperacion: unBloque TieneElTipoDeError: error Hacer: otroBloque
+	[ unBloque value.
+	self fail ]
+		on: error
+		do: [otroBloque]! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'MAM 5/2/2022 12:49:22'!
+assertEjecutarLaOperacion: unBloqueDeOperaciones enMenosDe: cantidadDeMilisegundos
+	| millisecondsBeforeRunning millisecondsAfterRunning |
+	
+	millisecondsBeforeRunning := Time millisecondClockValue * millisecond.
+	unBloqueDeOperaciones value.
+	millisecondsAfterRunning := Time millisecondClockValue * millisecond.
+	
+    	self assert: (millisecondsAfterRunning-millisecondsBeforeRunning) < (cantidadDeMilisegundos * millisecond)! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'MAM 5/2/2022 12:51:00'!
+assertQue: unCliente esUnicoCostumerEn: customerBook
+	^ [
+		self assert: customerBook numberOfCustomers = 1.
+		self assert: (customerBook includesCustomerNamed: unCliente)
+	]! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'MAM 5/2/2022 12:51:16'!
+assertQueEn: customerBook clientesTotalesSon: totales clientesActivosSon: activos clientesSuspendidosSon: suspendidos
+	self assert: totales equals: customerBook numberOfCustomers.
+	self assert: activos equals: customerBook numberOfActiveCustomers.
+	self assert: suspendidos equals: customerBook numberOfSuspendedCustomers.! !
+
+!classDefinition: #CustomerBook category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Object subclass: #CustomerBook
+	instanceVariableNames: 'suspended active'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+
+!classDefinition: #CustomerBook category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:11'!
+Object subclass: #CustomerBook
+	instanceVariableNames: 'suspended active'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'CodigoRepetido-Ejercicio'!
+!CustomerBook methodsFor: 'testing' stamp: 'NR 4/3/2019 10:14:26'!
+includesCustomerNamed: aName
+
+	^(active includes: aName) or: [ suspended includes: aName ]! !
+!CustomerBook methodsFor: 'testing' stamp: 'NR 4/3/2019 10:14:26'!
+isEmpty
+	
+	^active isEmpty and: [ suspended isEmpty ]! !
+!CustomerBook methodsFor: 'initialization' stamp: 'NR 4/3/2019 10:14:26' overrides: 16920235!
+initialize
+
+	super initialize.
+	active := OrderedCollection new.
+	suspended:= OrderedCollection new.! !
+!CustomerBook methodsFor: 'customer management' stamp: 'NR 4/3/2019 10:14:26'!
+addCustomerNamed: aName
+
+	aName isEmpty ifTrue: [ self signalCustomerNameCannotBeEmpty ].
+	((active includes: aName) or: [suspended includes: aName]) ifTrue: [ self signalCustomerAlreadyExists ].
+	
+	active add: aName ! !
+!CustomerBook methodsFor: 'customer management' stamp: 'NR 4/3/2019 10:14:26'!
+numberOfActiveCustomers
+	
+	^active size! !
+!CustomerBook methodsFor: 'customer management' stamp: 'NR 4/3/2019 10:14:26'!
+numberOfCustomers
+	
+	^active size + suspended size! !
+!CustomerBook methodsFor: 'customer management' stamp: 'NR 9/19/2018 17:36:09'!
+numberOfSuspendedCustomers
+	
+	^suspended size! !
+!CustomerBook methodsFor: 'customer management' stamp: 'SL 5/1/2022 23:59:23'!
+removeCustomerNamed: aName 
+
+	active remove: aName 
+		ifAbsent: [suspended remove: aName 
+			ifAbsent: [^NotFound signal].].
+! !
+!CustomerBook methodsFor: 'customer management' stamp: 'HernanWilkinson 7/6/2011 17:52'!
+signalCustomerAlreadyExists 
+
+	self error: self class customerAlreadyExistsErrorMessage! !
+!CustomerBook methodsFor: 'customer management' stamp: 'HernanWilkinson 7/6/2011 17:51'!
+signalCustomerNameCannotBeEmpty 
+
+	self error: self class customerCanNotBeEmptyErrorMessage ! !
+!CustomerBook methodsFor: 'customer management' stamp: 'NR 4/3/2019 10:14:26'!
+suspendCustomerNamed: aName 
+	
+	(active includes: aName) ifFalse: [^CantSuspend signal].
+	
+	active remove: aName.
+	
+	suspended add: aName
+! !
+
+!classDefinition: 'CustomerBook class' category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:12'!
+CustomerBook class
+	instanceVariableNames: ''!
+
+!classDefinition: 'CustomerBook class' category: 'CodigoRepetido-Ejercicio' stamp: 'SL 5/5/2022 20:10:12'!
+CustomerBook class
+	instanceVariableNames: ''!
+!CustomerBook class methodsFor: 'error messages' stamp: 'NR 4/30/2020 09:05:18'!
+customerAlreadyExistsErrorMessage
+
+	^'Customer Already Exists'! !
+!CustomerBook class methodsFor: 'error messages' stamp: 'NR 4/30/2020 09:05:25'!
+customerCanNotBeEmptyErrorMessage
+
+	^'Customer Name Cannot Be Empty'! !
+!CustomerBookTest methodsFor: 'aux-privado' stamp: 'SL 5/2/2022 15:46:16'!
+assertQue: unCliente esUnicoClienteEn: customerBook
+	^ [
+		self assert: customerBook numberOfCustomers = 1.
+		self assert: (customerBook includesCustomerNamed: unCliente)
+	]! !
+
+!methodRemoval: CustomerBookTest #assertQue:esUnicoCostumerEn: stamp: 'SL 5/5/2022 20:10:12'!
+assertQue: unCliente esUnicoCostumerEn: customerBook
+	^ [
+		self assert: customerBook numberOfCustomers = 1.
+		self assert: (customerBook includesCustomerNamed: unCliente)
+	]!
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:46:45' prior: 50476481!
+test04CanNotRemoveAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook removeCustomerNamed: 'Paul McCartney'] TieneElTipoDeError: NotFound Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:46:55' prior: 50476527!
+test07CanNotSuspendAnInvalidCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	customerBook addCustomerNamed: johnLennon.
+	
+	self AssertQueSiLaOperacion: [customerBook suspendCustomerNamed: 'Ringo Starr'.] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+!CustomerBookTest methodsFor: 'testing' stamp: 'SL 5/2/2022 15:47:01' prior: 50476541!
+test08CanNotSuspendAnAlreadySuspendedCustomer
+	
+	| customerBook johnLennon |
+			
+	customerBook := CustomerBook new.
+	johnLennon := 'John Lennon'.
+	self AgregarYSuspenderA: johnLennon En: customerBook.
+
+	self AssertQueSiLaOperacion: [ customerBook suspendCustomerNamed: johnLennon. ] TieneElTipoDeError: CantSuspend Hacer: [
+		self assertQue: johnLennon esUnicoClienteEn: customerBook.]! !
+
+----STARTUP---- (5 May 2022 20:12:16) as /home/lambda/Cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/03-Numeros/Numeros-Parte2-Ejercicio.st----!
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:20:03' prior: 50476777 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue]
+	
+! !
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:21:45' prior: 50477015 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	(anAdder isKindOf: Fraccion) ifTrue: [^self * anAdder denominator + anAdder numerator / anAdder denominator]! !
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:21:57' prior: 50477022 overrides: 50476706!
++ anAdder 
+	(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	(anAdder isKindOf: Fraccion) ifTrue: [^self * anAdder denominator + anAdder numerator / anAdder denominator].! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:22:00'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:22:00'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:22:00'!
+ERROR!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:24:06' prior: 50476901 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	]! !
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:25:17' prior: 50477178 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := 10
+	]! !
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:27:21' prior: 50477191 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder value * denominator.
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:27:37'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:27:38'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:27:38'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:27:38'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:27:46'!
+FAILURE!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:28:12' prior: 50477205 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder * denominator.
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:28:15'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:28:15'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:28:15'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:28:23'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:28:23'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:28:23'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:28:26'!
+FAILURE!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:29:00' prior: 50477360 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder * denominator + numerator .
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:29:07'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:29:07'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:29:07'!
+ERROR!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:29:24' prior: 50477649 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder value * denominator + numerator .
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:29:27'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:29:27'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:29:28'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:29:28'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:29:28'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:29:28'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:29:28'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:29:28'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:29:28'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:30:16'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:30:16'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:30:16'!
+ERROR!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:30:27' prior: 50477801 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder * denominator + numerator .
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:30:29'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:30:29'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:30:29'!
+ERROR!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:31:57'!
+PASSED!
+
+anAdder isKindOf: Entero!
+
+anAdder * denominator!
+!Fraccion methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:37:30' prior: 50478088 overrides: 50476706!
++ anAdder 
+	
+	| newNumerator newDenominator |
+	(anAdder isKindOf: Fraccion) ifTrue: [
+		newNumerator := (numerator * anAdder denominator) + (denominator * anAdder numerator).
+		newDenominator := denominator * anAdder denominator.
+	
+		^newNumerator / newDenominator 
+	].
+	(anAdder isKindOf: Entero) ifTrue: [
+		newNumerator := anAdder * denominator + numerator .
+		newDenominator := denominator.
+		
+		^newNumerator / newDenominator 
+	]! !
+!Entero methodsFor: 'accessing' stamp: 'SL 5/5/2022 20:38:54'!
+beAddedToAnEntero: anAugend
+	! !
+!Entero methodsFor: 'aux-private' stamp: 'SL 5/5/2022 20:41:36' prior: 50478261!
+beAddedToAnEntero: anAugend
+	^self class with: value + anAugend integerValue! !
+!Fraccion methodsFor: 'aux-private' stamp: 'SL 5/5/2022 20:43:14'!
+beAddedToAnEntero: anAugend
+	^anAugend * self denominator + self numerator / self denominator! !
+!Entero methodsFor: 'aux-private' stamp: 'SL 5/5/2022 20:43:37' prior: 50478265!
+beAddedToAnEntero: anAugend
+	^anAugend class with: value + self integerValue! !
+!Entero methodsFor: 'arithmetic operations' stamp: 'SL 5/5/2022 20:45:05' prior: 50477033 overrides: 50476706!
++ anAdder 
+	"(anAdder isKindOf: Entero) ifTrue: [^self class with: value + anAdder integerValue].
+	(anAdder isKindOf: Fraccion) ifTrue: [^self * anAdder denominator + anAdder numerator / anAdder denominator]."
+	
+	anAdder beAddedToAnEntero: self.! !
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:45:10'!
+FAILURE!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:45:10'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:45:10'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:46:40'!
+FAILURE!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:46:40'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:46:40'!
+ERROR!
+
+!testRun: #NumeroTest #test01isZeroReturnsTrueWhenAskToZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test02isZeroReturnsFalseWhenAskToOthersButZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test03isOneReturnsTrueWhenAskToOne stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test04isOneReturnsFalseWhenAskToOtherThanOne stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test06EnteroMultipliesWithEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test07EnteroDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test08FraccionAddsWithFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test09FraccionMultipliesWithFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test10FraccionDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test12FraccionAddsEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test13EnteroMultipliesFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test14FraccionMultipliesEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test15EnteroDividesFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test16FraccionDividesEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test17AFraccionCanBeEqualToAnEntero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test18AparentFraccionesAreEqual stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test19AddingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test20MultiplyingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test21DividingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test22DividingEnterosCanReturnAFraccion stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test23CanNotDivideEnteroByZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test24CanNotDivideFraccionByZero stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test25AFraccionCanNotBeZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test26AFraccionCanNotBeOne stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test27EnteroSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test28FraccionSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test29EnteroSubstractsFraccionCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test30FraccionSubstractsEnteroCorrectly stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test31SubstractingFraccionesCanReturnAnEntero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test32SubstractingSameEnterosReturnsZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test33SubstractingSameFraccionesReturnsZero stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test34SubstractingAHigherValueToANumberReturnsANegativeNumber stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test35FibonacciZeroIsOne stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test36FibonacciOneIsOne stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test37FibonacciEnteroReturnsAddingPreviousTwoFibonacciEnteros stamp: 'SL 5/5/2022 20:47:14'!
+FAILURE!
+
+!testRun: #NumeroTest #test38FibonacciNotDefinedForNegativeNumbers stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test39NegationOfEnteroIsCorrect stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test40NegationOfFraccionIsCorrect stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test41SignIsCorrectlyAssignedToFractionWithTwoNegatives stamp: 'SL 5/5/2022 20:47:14'!
+PASSED!
+
+!testRun: #NumeroTest #test42SignIsCorrectlyAssignedToFractionWithNegativeDivisor stamp: 'SL 5/5/2022 20:47:14'!
+ERROR!
+
+!testRun: #NumeroTest #test05EnteroAddsWithEnteroCorrectly stamp: 'SL 5/5/2022 20:47:16'!
+FAILURE!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:47:41'!
+FAILURE!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:48:13'!
+FAILURE!
+
+!testRun: #NumeroTest #test11EnteroAddsFraccionCorrectly stamp: 'SL 5/5/2022 20:48:22'!
+PASSED!

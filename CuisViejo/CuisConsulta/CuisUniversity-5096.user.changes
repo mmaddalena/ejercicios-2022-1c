@@ -1,0 +1,95 @@
+
+
+----STARTUP---- (21 May 2022 17:45:27) as /home/lambda/Cuis/CuisConsulta/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Cuis/AlgoIII-2022-1C-1Parcial-AvispasYAbejas-P3-V1.st----!
+
+!testRun: #CicloReproductivoDeAvispasTest #test01EnElInicioDeLosTiemposHayUnaCantidadDeAvispasVivas stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test02EnElInicioDeLosTiemposNoHayHuevosDeAvispas stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test03LasAvispasMuerenAlCambiarDeAño stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test04AlReproducirseUnaAvispaAlSiguienteAñoGestanUnaAvispaDescendiente stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test05ReproducirseUnaAvispaAlSiguienteAñoGestanUnaAvispaDescendientePeroNoPuedeGestarNingunaAlOtroAño stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test06AlReproducirseUnaAvispaComeOrugasAlSiguienteAñoGestanUnaDescendienteDeSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test07AlReproducirseUnaAvispaComePolillasAlSiguienteAñoGestanUnaDescendienteDeSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #CicloReproductivoDeAvispasTest #test08AlReproducirseUnaAvispaLadronaAlSiguienteAñoGestanUnaDescendienteDeSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:04'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test01CuandoUnAvispaComeOrugasSeReproducePorPrimeraVezDejaUnHuevo stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test02CadaVezQueUnaAvispaComeOrugasSeReproduceDejaUnHuevoMas stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test03ParaDejarUnHuevoUnaAvispaComeOrugasReduceLaPoblacionDeUnaOrugaANinguna stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test04ParaDejarUnHuevoUnaAvispaComeOrugasDecrementaEnUnoLaPoblacionDeOrugasDelHabitat stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test05CuandoNoHayOrugasUnaAvispaComeOrugasNoPuedeDejarHuevos stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test06CuandoUnaAvispaComePolillasSeReproduceDejaUnHuevo stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test07ParaDejarUnHuevoUnaAvispaComePolillasReduceLaPoblacionDeUnaPolillaANinguna stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test08ParaDejarUnHuevoUnaAvispaComePolillasDecrementaEnUnoLaPoblacionDePolillasDelHabitat stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test09CuandoNoHayPolillasUnaAvispaComePolillasNoPuedeDejarHuevos stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test10CuandoUnaAvispaComeOrugasSeReproduceDejaUnHuevoConSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test11CuandoUnaAvispaComeOrugasAunNoSeReprodujoNoTieneHuevosConSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test12CuandoUnaAvispaComePolillasSeReproduceDejaUnHuevoConSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test13DosAvispasDelMismoTipoDejanHuevosDeLaMismaLineaGenetica stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test14CuandoUnaAvispaLadronaSeReproduceDejaUnHuevoConSuFirmaGenetica stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test15CuandoUnaAvispaLadronaSeReproduceLeSacaUnHuevoAOtraAvispa stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test16CuandoUnaAvispaLadronaSeReproduceSoloRobaUnHuevo stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test17CuandoUnaAvispaLadronaNoTieneRecursosNoDejaUnHuevo stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test18CuandoUnaAvispaLadronaSeReproduceRobaHuevosDeVariasAvispas stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test19CuandoUnaAvispaLadronaSeReproduceNoVuelveARobarDeLaUltimaLineaGeneticaQueYaHaRobado stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+!testRun: #ReproduccionAvispasTests #test20CuandoUnaAvispaLadronaSeReproduceNoRobaHuevosDeNingunaFirmaGeneticaALaQueLeHayaRobadoPreviamente stamp: 'sL 5/21/2022 17:46:05'!
+PASSED!
+
+----STARTUP---- (21 May 2022 17:47:16) as /home/lambda/Cuis/CuisConsulta/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Cuis/AlgoIII-2022-1C-1Parcial-AvispasYAbejas-P3.st----!

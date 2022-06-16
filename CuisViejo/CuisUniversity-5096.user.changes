@@ -1,0 +1,28 @@
+
+
+----STARTUP---- (9 June 2022 21:29:29) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/08-ServiciosFinancieros2/ServiciosFinancieros-Solucion-Extra.st----!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript print: 'Hola'!
+
+Transcript printOn: 'Hola'!
+
+----QUIT----(9 June 2022 21:55:11) CuisUniversity-5096.image priorSource: 4557982!

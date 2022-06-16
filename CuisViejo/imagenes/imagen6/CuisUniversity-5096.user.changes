@@ -1,0 +1,955 @@
+
+
+----STARTUP---- (7 June 2022 18:08:27) as /home/lambda/Cuis/CuisUniversity-5096.image!
+
+
+----End fileIn of /home/lambda/Cuis/ServiciosFinancieros-Ejercicio.st----!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:09:09'!
+ERROR!
+
+Object subclass: #Transference
+	instanceVariableNames: 'sender'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:21'!
+Object subclass: #Transference
+	instanceVariableNames: 'sender'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+Object subclass: #Transference
+	instanceVariableNames: 'sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:26'!
+Object subclass: #Transference
+	instanceVariableNames: 'sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+Object subclass: #Transference
+	instanceVariableNames: 'value sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:09:30'!
+Object subclass: #Transference
+	instanceVariableNames: 'value sender receiver'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Transference methodsFor: 'no messages' stamp: 'sL 6/7/2022 18:10:34'!
+initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount .! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:10:36'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:10:36'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:10:36'!
+FAILURE!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:10:36'!
+FAILURE!
+
+Transference!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:12:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:12:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:12:24'!
+FAILURE!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:12:24'!
+FAILURE!
+
+firstTransference value!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:13:05' overrides: 16902254!
+value
+
+	^value! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:13:07'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:13:22'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:15:36'!
+test04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:15:51'!
+test05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:16:38'!
+PASSED!
+
+!testRun: #TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:16:38'!
+ERROR!
+
+!testRun: #TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:16:38'!
+ERROR!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:16:55'!
+sender
+
+	^sender ! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:17:00'!
+receiver
+
+	^receiver ! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+
+!testRun: #TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:17:02'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:17:53'!
+aaatest04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	! !
+
+!methodRemoval: TransferenceTests #test04TransferenceKnowsItsSender stamp: 'sL 6/7/2022 18:17:53'!
+test04TransferenceKnowsItsSender
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference sender) equals: originAccount .
+	!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:18:01'!
+aaatest05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	! !
+
+!methodRemoval: TransferenceTests #test05TransferenceKnowsItsReceiver stamp: 'sL 6/7/2022 18:18:01'!
+test05TransferenceKnowsItsReceiver
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference receiver) equals: destinationAccount .
+	!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:18:29'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:22:22'!
+test04DepositOfTransferKnowsItsWithdraw
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:26:24' prior: 50332146!
+initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	"sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount ."! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:26:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:26:26'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:26:26'!
+ERROR!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:29:16' prior: 50332075!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:29:22' prior: 50332381!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:30:13'!
+initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	! !
+
+Object subclass: #Transference
+	instanceVariableNames: 'value withdraw deposit'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+!classDefinition: #Transference category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:30:35'!
+Object subclass: #Transference
+	instanceVariableNames: 'value withdraw deposit'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:02' prior: 50332427!
+initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	withdraw _ aTransferWithdraw.
+	
+	deposit _ aTransferDeposit .
+	! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:05' prior: 50332448!
+initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+
+	value _ aTransferWithdraw value.
+	
+	withdraw _ aTransferWithdraw.
+	
+	deposit _ aTransferDeposit.
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:31:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:11'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:11'!
+ERROR!
+
+!methodRemoval: Transference #receiver stamp: 'sL 6/7/2022 18:31:28'!
+receiver
+
+	^receiver !
+
+!methodRemoval: Transference #sender stamp: 'sL 6/7/2022 18:31:32'!
+sender
+
+	^sender !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:48'!
+withdraw
+
+	^withdraw ! !
+!Transference methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:31:57'!
+deposit
+
+	^deposit ! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:31:59'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:59'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:31:59'!
+ERROR!
+!TransferDeposit class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:33:20'!
+for: aValue With: withdrawCounterpart
+
+	^ self new initializeFor: aValue andCounterpart: withdrawCounterpart.! !
+
+!classDefinition: #TransferDeposit category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:34:33'!
+AccountTransaction subclass: #TransferDeposit
+	instanceVariableNames: 'value counterpart'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:34:31'!
+initializeFor: aValue andCounterpart: withdrawCounterpart
+
+	value _ aValue .
+	
+	counterpart _ withdrawCounterpart.! !
+
+!classDefinition: #TransferWithdraw category: 'ServiciosFinancieros-Ejercicio' stamp: 'sL 6/7/2022 18:34:59'!
+AccountTransaction subclass: #TransferWithdraw
+	instanceVariableNames: 'value counterpart'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:34:58'!
+initializeFor: aValue andCounterpart: withdrawCounterpart
+
+	value _ aValue .
+	
+	counterpart _ withdrawCounterpart.! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:35:20' prior: 50332547!
+initializeFor: aValue andCounterpart: depositCounterpart
+
+	value _ aValue .
+	
+	counterpart _ depositCounterpart.! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:26'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:26'!
+ERROR!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:26'!
+ERROR!
+!TransferDeposit methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:35:38'!
+counterpart
+
+	^ counterpart! !
+!TransferWithdraw methodsFor: 'initialization' stamp: 'sL 6/7/2022 18:35:42'!
+counterpart
+
+	^ counterpart! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:45'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:35:48'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:36:01'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:36:12'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:37:55'!
+test04DepositAndWithdrawOfTransferKnowsTheirCounterparts
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	! !
+
+!methodRemoval: TransferenceTests #test04DepositOfTransferKnowsItsWithdraw stamp: 'sL 6/7/2022 18:37:55'!
+test04DepositOfTransferKnowsItsWithdraw
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	
+	"self assert: withdrawValue equals: (Withdraw register: withdrawValue on: account) value"
+	!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:39:01' prior: 50331791!
+test03TransferenceContainsCorrectAmount
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: (firstTransference value) equals: 50 * peso.
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:39:06' prior: 50332621!
+test04DepositAndWithdrawOfTransferKnowsTheirCounterparts
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: destinationAccount.
+	
+	self assert: ((firstTransference deposit) counterpart) equals: ((firstTransference withdraw) counterpart).
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:42:23'!
+test05accountCantTransferToItself
+
+	| originAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: originAccount.
+	
+	
+	! !
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/SolucionEj4/v1.1/Stack-Exercise.st----!
+
+----End fileIn of /home/lambda/Cuis/ejercicios-2022-1c/SolucionEj5/v1.0/Grupo32-MarsRover.st----!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:45:12' prior: 50332687!
+test05accountCantTransferToItself
+
+	| originAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: 50*peso from: originAccount to: originAccount.
+	
+	self 
+		should: [ Transference send: 50*peso from: originAccount to: originAccount.]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: Transference cantSendToItselfErrorDescription equals: anError messageText ].
+	
+	
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:45:22' prior: 50333911!
+test05accountCantTransferToItself
+
+	| originAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [ Transference send: 50*peso from: originAccount to: originAccount.]
+		raise: Error
+		withExceptionDo: [ :anError | self assert: Transference cantSendToItselfErrorDescription equals: anError messageText ].
+	
+	
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:46:00'!
+cantSendToItselfErrorDescription
+
+	^'Account cant make a transference to itself.'! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:47:41' prior: 50332404!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:47:43'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:52:38'!
+test06cantTransferANegativeValue
+
+	| originAccount destinationAccount firstTransference |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	firstTransference _ Transference send: -50*peso from: originAccount to: destinationAccount.
+	
+	self 
+		should: []
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferNegativeAmountErrorDescription equals: anError messageText ]
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:54:44' prior: 50333991!
+test06cantTransferANegativeValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: -50*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferNegativeAmountErrorDescription equals: anError messageText ]
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:55:18'!
+cantTransferNegativeAmountErrorDescription
+
+	^'Cant make a negative amount transference.'! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:55:24'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:55:24'!
+FAILURE!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:55:24'!
+FAILURE!
+
+!methodRemoval: Transference #initializeWith:by:to: stamp: 'sL 6/7/2022 18:55:38'!
+initializeWith: anAmount by: aSenderAccount to: aReceivingAccount
+
+	value _ anAmount .
+	
+	"sender _ aSenderAccount .
+	
+	receiver _ aReceivingAccount ."!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:56:58' prior: 50333947!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+	
+	"^self new initializeWith: anAmount by: aSenderAccount to: aReceivingAccount."
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+	
+	"
+	register: aValue on: account
+
+	| transaction |
+	
+	transaction := self for: aValue.
+	account register: transaction.
+		
+	^ transaction
+	
+	for: aValue
+
+	^ self new initializeFor: aValue 
+	"
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:57:07' prior: 50334062!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+
+	! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:57:11'!
+PASSED!
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:57:54'!
+test06cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	! !
+!TransferenceTests methodsFor: 'tests' stamp: 'sL 6/7/2022 18:58:05'!
+test07cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	! !
+
+!methodRemoval: TransferenceTests #test06cantTransferAZeroValue stamp: 'sL 6/7/2022 18:58:05'!
+test06cantTransferAZeroValue
+
+	| originAccount destinationAccount |
+	
+	originAccount _ ReceptiveAccount new.
+	
+	destinationAccount _ ReceptiveAccount new.
+	
+	self 
+		should: [Transference send: 0*peso from: originAccount to: destinationAccount.]
+		raise: Error
+		withExceptionDo: [:anError | self assert: Transference cantTransferZeroAmountErrorDescription equals: anError messageText ]
+	!
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:59:28' prior: 50334092!
+send: anAmount from: aSenderAccount to: aReceivingAccount 
+
+	| aTransferDeposit aTransferWithdraw |
+	
+	(aSenderAccount = aReceivingAccount) ifTrue: [
+		self error: Transference cantSendToItselfErrorDescription.
+		].
+	
+	(anAmount negative) ifTrue: [
+		self error: Transference cantTransferNegativeAmountErrorDescription .
+		].
+	
+	(anAmount isZero) ifTrue: [
+		self error: Transference cantTransferZeroAmountErrorDescription .
+		].
+	
+	aTransferWithdraw _ TransferWithdraw register: anAmount on: aSenderAccount .
+	
+	aTransferDeposit _ TransferDeposit register: anAmount on: aReceivingAccount .
+
+	^self new initializeWithWithdraw: aTransferWithdraw andDeposit: aTransferDeposit.
+	
+
+	! !
+!Transference class methodsFor: 'as yet unclassified' stamp: 'sL 6/7/2022 18:59:40'!
+cantTransferZeroAmountErrorDescription
+
+	^'Cant make a zero amount transference.'! !
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 18:59:44'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 19:00:18'!
+PASSED!
+
+!testRun: #TransferenceTests #test01TransferenceTakesMoneyFromOriginAccount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test02TransferenceSendsMoneyToDestinationAccount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test03TransferenceContainsCorrectAmount stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test04DepositAndWithdrawOfTransferKnowsTheirCounterparts stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test05accountCantTransferToItself stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test06cantTransferANegativeValue stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #TransferenceTests #test07cantTransferAZeroValue stamp: 'sL 6/7/2022 19:00:21'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test01ReceptiveAccountHaveZeroAsBalanceWhenCreated stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test02DepositIncreasesBalanceOnTransactionValue stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test03WithdrawDecreasesBalanceOnTransactionValue stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test04WithdrawValueMustBePositive stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test05ReceptiveAccountKnowsRegisteredTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test06ReceptiveAccountDoNotKnowNotRegisteredTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test07AccountKnowsItsTransactions stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+!testRun: #ReceptiveAccountTest #test08TransactionWorks stamp: 'sL 6/7/2022 19:00:24'!
+PASSED!
+
+----SNAPSHOT----(7 June 2022 19:03:31) CuisUniversity-5096.image priorSource: 4557982!
+
+----QUIT----(7 June 2022 19:14:03) CuisUniversity-5096.image priorSource: 85140!
